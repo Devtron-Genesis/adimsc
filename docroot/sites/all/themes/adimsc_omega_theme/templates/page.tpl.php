@@ -70,6 +70,7 @@
  * @see omega_preprocess_page()
  */
 ?>
+<<<<<<< HEAD
 <br>
 <hr>
 Latest News Blog
@@ -106,6 +107,12 @@ Chairman Message home Blog
 
 <div class="l-page">
   <header class="l-header" role="banner">
+=======
+
+<div class="l-page">
+  <header class="l-header" role="banner">
+  <?php print render($page['branding']); ?>
+>>>>>>> ea7c2ea2554a075b05f23d07bb71b7f53ba3e2ca
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -123,13 +130,18 @@ Chairman Message home Blog
         <?php endif; ?>
       <?php endif; ?>
 
+<<<<<<< HEAD
       <?php print render($page['branding']); ?>
+=======
+
+>>>>>>> ea7c2ea2554a075b05f23d07bb71b7f53ba3e2ca
     </div>
 
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
   </header>
 
+<<<<<<< HEAD
 <!--Main Slider Home-->
 
 
@@ -138,6 +150,8 @@ Chairman Message home Blog
 
 
 
+=======
+>>>>>>> ea7c2ea2554a075b05f23d07bb71b7f53ba3e2ca
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
