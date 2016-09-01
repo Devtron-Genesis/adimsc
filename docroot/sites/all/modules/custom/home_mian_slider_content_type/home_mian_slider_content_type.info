@@ -1,0 +1,17 @@
+name = Home Mian Slider content type
+description = For displaying home page slider images
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = image
+dependencies[] = views
+dependencies[] = views_slideshow
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_home_slider_images
+features[field_instance][] = node-home_slider_images-field_home_slider_images
+features[image][] = home_slider
+features[node][] = home_slider_images
+features[views_view][] = home_slider_view
+features_exclude[dependencies][ctools] = ctools
