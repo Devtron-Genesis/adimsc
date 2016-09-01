@@ -46,9 +46,10 @@ function news_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['field_news_detail']['table'] = 'field_data_field_news_detail';
   $handler->display->display_options['fields']['field_news_detail']['field'] = 'field_news_detail';
   $handler->display->display_options['fields']['field_news_detail']['label'] = '';
+  $handler->display->display_options['fields']['field_news_detail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_detail']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['field_news_detail']['settings'] = array(
-    'trim_length' => '50',
+    'trim_length' => '20',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
