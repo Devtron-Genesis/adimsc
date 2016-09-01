@@ -70,20 +70,40 @@
  * @see omega_preprocess_page()
  */
 ?>
-
-
-
 <br>
+<hr>
+Latest News Blog
 
+<hr>
+<?php if (!empty($page['page_main_latest_news'])): ?>
+  <div class="col-sm-4" style="width:400px;">
+<?php print render($page['page_main_latest_news']); ?>
+     </div>
+      <?php endif; ?>
+
+<hr>
+Main Slider Blog
+<hr>
 <?php if (!empty($page['page_main_slider'])): ?>
 <?php print render($page['page_main_slider']); ?>
       <?php endif; ?>
+
 <hr>
-<br>
-<?php if (!empty($page['page_main_latest_new'])): ?>
-<?php print render($page['page_main_latest_new']); ?>
+Youtube Vedio Blog
+<hr>
+<?php if (!empty($page['page_main_yvediolink'])): ?>
+<?php print render($page['page_main_yvediolink']); ?>
       <?php endif; ?>
 <hr>
+Chairman Message home Blog
+<hr>
+<?php if (!empty($page['page_main_chairman_msg'])): ?>
+<?php print render($page['page_main_chairman_msg']); ?>
+      <?php endif; ?>
+
+  <hr>
+  <hr>
+
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">
