@@ -6,10 +6,38 @@ screenshot = screenshot.png
 base theme = omega
 version = 1.x
 
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][]=  css/style.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = font-awsome/css/font-awesome.min.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;;script
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/application.js
+
+
 ; ========================================
 ; Regions
 ; ========================================
 regions[page_top] = Page Top
+regions[main_page_left_slider] = Main Page Left SLider Region
+regions[main_page_left_message] = Main Page Left Message Region
+regions[main_page_right_latestnews] = Main Page Right News Region
+regions[main_page_right_vedio] = Main Page Right  Vedoio Region
 regions[page_main_latest_news] = Main Page Latest News carousel
 regions[page_main_slider] = Main Page Slider Images
 regions[page_main_yvediolink] = Main Page Youtube Vedio

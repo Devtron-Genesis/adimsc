@@ -71,104 +71,50 @@
  */
 ?>
 
-<div class="l-page">
-  <header class="l-header" role="banner">
-  <?php print render($page['branding']); ?>
 
-    <div class="l-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
+  <section>
 
-      <?php if ($site_name || $site_slogan): ?>
-        <?php if ($site_name): ?>
-          <h1 class="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
 
-        <?php if ($site_slogan): ?>
-          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
+  <div class="banner-area">
+<?php if (!empty($page['main_page_left_slider'])): ?>
+<div id="mainslider">
+<?php print render($page['main_page_left_slider']); ?>
+      </div>
       <?php endif; ?>
 
 
+
+
+<?php if (!empty($page['main_page_left_message'])): ?>
+<div id="carousel-caption">
+<?php print render($page['main_page_left_message']); ?>
     </div>
-
-    <?php print render($page['header']); ?>
-    <?php print render($page['navigation']); ?>
-  </header>
-
-
-<br>
-<hr>
-Latest News Blog
-
-<hr>
-<?php if (!empty($page['page_main_latest_news'])): ?>
-  <div class="col-sm-4" style="width:400px;">
-<?php print render($page['page_main_latest_news']); ?>
-     </div>
       <?php endif; ?>
 
-<hr>
-Main Slider Blog
-<hr>
-<?php if (!empty($page['page_main_slider'])): ?>
-<?php print render($page['page_main_slider']); ?>
-      <?php endif; ?>
-
-<hr>
-Youtube Vedio Blog
-<hr>
-<?php if (!empty($page['page_main_yvediolink'])): ?>
-<?php print render($page['page_main_yvediolink']); ?>
-      <?php endif; ?>
-<hr>
-Chairman Message home Blog
-<hr>
-<?php if (!empty($page['page_main_chairman_msg'])): ?>
-<?php print render($page['page_main_chairman_msg']); ?>
-      <?php endif; ?>
-
-  <hr>
-  <hr>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="l-main">
-    <div class="l-content" role="main">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-    </div>
-
-    <?php print render($page['sidebar_first']); ?>
-    <?php print render($page['sidebar_second']); ?>
-  </div>
-
-  <footer class="l-footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
-  </footer>
 </div>
+
+
+ <div class="news-area">
+
+
+<?php if (!empty($page['main_page_right_latestnews'])): ?>
+<div class="latest-news">
+
+<?php print render($page['main_page_right_latestnews']); ?>
+</div>
+      <?php endif; ?>
+
+
+
+
+<?php if (!empty($page['main_page_right_vedio'])): ?>
+  <div class="news-videos">
+              <div class="video-player">
+<?php print render($page['main_page_right_vedio']); ?>
+     </div>
+      </div>
+      <?php endif; ?>
+
+
+</div>
+</section>
