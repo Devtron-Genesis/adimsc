@@ -72,16 +72,18 @@
 ?>
 
 
-<?php if (!empty($page['page_main_latest_new'])): ?>
-<?php print render($page['page_main_latest_new']); ?>
-      <?php endif; ?>
+
+<br>
 
 <?php if (!empty($page['page_main_slider'])): ?>
 <?php print render($page['page_main_slider']); ?>
       <?php endif; ?>
-
-
-
+<hr>
+<br>
+<?php if (!empty($page['page_main_latest_new'])): ?>
+<?php print render($page['page_main_latest_new']); ?>
+      <?php endif; ?>
+<hr>
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">
