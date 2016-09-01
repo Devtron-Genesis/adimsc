@@ -9,7 +9,7 @@ version = 1.x
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-
+stylesheets[all][] = css/overide.css
 stylesheets[all][] = css/bootstrap.css
 stylesheets[all][]=  css/style.css
 stylesheets[all][] = css/fonts.css
@@ -34,10 +34,10 @@ scripts[] = js/application.js
 ; Regions
 ; ========================================
 regions[page_top] = Page Top
-regions[main_page_left_slider] = Main Page Left Region
-regions[main_page_left_message] = Main Page Left Region
-regions[main_page_right_latestnews] = Main Page Right Region
-regions[main_page_right_vedio] = Main Page Right Region
+regions[main_page_left_slider] = Main Page Left SLider Region
+regions[main_page_left_message] = Main Page Left Message Region
+regions[main_page_right_latestnews] = Main Page Right News Region
+regions[main_page_right_vedio] = Main Page Right  Vedoio Region
 regions[page_main_latest_news] = Main Page Latest News carousel
 regions[page_main_slider] = Main Page Slider Images
 regions[page_main_yvediolink] = Main Page Youtube Vedio
@@ -123,3 +123,22 @@ settings[omega_libraries][pie][status] = 0
 settings[omega_libraries][pie][variant] = _default
 settings[omega_libraries][html5shiv][status] = 0
 settings[omega_libraries][html5shiv][variant] = _default
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/application.js
+scripts[] = js/bootstrap.min.js
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/override.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/bootstrap.css
+
+

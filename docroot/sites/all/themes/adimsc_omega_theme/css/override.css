@@ -1,0 +1,39 @@
+.site-logo img{
+	height: 85px;
+	width: 85px;
+}
+.sf-sub-indicator{
+	display: none;
+}
+#top-menu ul li a {
+	color: white;
+	font-size: 12px;
+}
+#top-menu ul li ul {
+	position: absolute;
+    z-index: 1000;
+    top: 28px;
+    left: 0px;
+    text-align: left;
+    padding: 0px;
+}
+#top-menu ul li ul li{
+	background: #000;
+	margin-bottom: 1px;
+}
+#top-menu ul li ul li a{
+		width: 100%;
+	display: inline-block;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 15px;
+}
+#top-menu ul li ul li:hover{
+background: #c63d41;
+}
+#top-menu ul li ul li:hover a{
+color: #fff !important;
+}
+

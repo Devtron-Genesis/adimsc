@@ -71,25 +71,42 @@
  */
 ?>
 
-
+  <header class="l-header" role="banner">
+    <div class="l-branding">
+      <?php if (!empty($page['branding'])): ?>
+      <div id="top-menu" class="container-fluid main-menu admin menu-area top-social">
+        <?php print render($page['branding']); ?>
+      </div>
+    <?php endif; ?>
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+      <?php endif; ?>
+      <?php if ($site_name || $site_slogan): ?>
+        <?php if ($site_name): ?>
+          <h1 class="site-name">
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+          </h1>
+        <?php endif; ?>
+        <?php if ($site_slogan): ?>
+          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+        <?php endif; ?>
+      <?php endif; ?>
+    </div>
+  </header>
   <section>
 
-
   <div class="banner-area">
-<?php if (!empty($page['main_page_left_slider'])): ?>
-<div id="mainslider">
-<?php print render($page['main_page_left_slider']); ?>
+
+    <?php if (!empty($page['main_page_left_slider'])): ?>
+      <div id="mainslider">
+    <?php print render($page['main_page_left_slider']); ?>
       </div>
-      <?php endif; ?>
-
-
-
-
-<?php if (!empty($page['main_page_left_message'])): ?>
-<div id="carousel-caption">
-<?php print render($page['main_page_left_message']); ?>
-    </div>
-      <?php endif; ?>
+    <?php endif; ?>
+    <?php if (!empty($page['main_page_left_message'])): ?>
+      <div id="carousel-caption">
+    <?php print render($page['main_page_left_message']); ?>
+      </div>
+    <?php endif; ?>
 
 </div>
 
