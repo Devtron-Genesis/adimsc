@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Home Mian Slider content type feature.
+ */
+
+include_once 'home_mian_slider_content_type.features.inc';
