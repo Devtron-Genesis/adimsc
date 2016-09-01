@@ -95,3 +95,22 @@ settings[omega_libraries][pie][status] = 0
 settings[omega_libraries][pie][variant] = _default
 settings[omega_libraries][html5shiv][status] = 0
 settings[omega_libraries][html5shiv][variant] = _default
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/application.js
+scripts[] = js/bootstrap.min.js
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/override.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/bootstrap.css
+
+
