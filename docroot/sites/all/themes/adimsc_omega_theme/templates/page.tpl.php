@@ -74,6 +74,7 @@
 <div class="l-page">
   <header class="l-header" role="banner">
   <?php print render($page['branding']); ?>
+
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -97,6 +98,51 @@
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
   </header>
+
+
+<br>
+<hr>
+Latest News Blog
+
+<hr>
+<?php if (!empty($page['page_main_latest_news'])): ?>
+  <div class="col-sm-4" style="width:400px;">
+<?php print render($page['page_main_latest_news']); ?>
+     </div>
+      <?php endif; ?>
+
+<hr>
+Main Slider Blog
+<hr>
+<?php if (!empty($page['page_main_slider'])): ?>
+<?php print render($page['page_main_slider']); ?>
+      <?php endif; ?>
+
+<hr>
+Youtube Vedio Blog
+<hr>
+<?php if (!empty($page['page_main_yvediolink'])): ?>
+<?php print render($page['page_main_yvediolink']); ?>
+      <?php endif; ?>
+<hr>
+Chairman Message home Blog
+<hr>
+<?php if (!empty($page['page_main_chairman_msg'])): ?>
+<?php print render($page['page_main_chairman_msg']); ?>
+      <?php endif; ?>
+
+  <hr>
+  <hr>
+
+
+
+
+
+
+
+
+
+
 
   <div class="l-main">
     <div class="l-content" role="main">

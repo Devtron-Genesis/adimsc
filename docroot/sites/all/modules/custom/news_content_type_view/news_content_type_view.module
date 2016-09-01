@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the News Content type & view feature.
+ */
+
+include_once 'news_content_type_view.features.inc';
