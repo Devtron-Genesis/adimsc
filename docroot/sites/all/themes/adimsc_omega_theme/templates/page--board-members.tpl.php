@@ -92,8 +92,7 @@
       <?php print render($page['content']); ?>
     </div>
   </div>
-
-  <footer class="l-footer" role="contentinfo">
+</div>
+  <footer class="footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
-</div>

@@ -74,7 +74,7 @@
   <header class="l-header" role="banner">
     <div class="l-branding">
       <?php if (!empty($page['branding'])): ?>
-      <div id="top-menu" class="container-fluid main-menu menu-area top-social">
+      <div id="top-menu" class="container-fluid pull-right">
         <?php print render($page['branding']); ?>
       </div>
     <?php endif; ?>
