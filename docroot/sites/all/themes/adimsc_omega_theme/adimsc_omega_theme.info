@@ -9,9 +9,8 @@ version = 1.x
 ; ========================================
 ; Regions
 ; ========================================
-regions[page_top] = Page Top
-regions[page_bottom] = Page Bottom
 regions[content] = Content
+regions[footer] = Footer
 regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation
@@ -19,7 +18,8 @@ regions[highlighted] = Highlighted
 regions[help] = Help
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
-regions[footer] = Footer
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
 
 ; ========================================
 ; Zones
@@ -27,6 +27,12 @@ regions[footer] = Footer
 zones[header] = Header
 zones[content] = Content
 zones[footer] = Footer
+
+; ========================================
+; CSS and JS files
+; ========================================
+stylesheets[all][] = css/overrides.css
+scripts[] = js/custom.js
 
 ; ========================================
 ; Settings
@@ -61,6 +67,7 @@ settings[omega_livereload_host] = localhost
 settings[omega_livereload_port] = 35729
 settings[omega_demo_regions] = 1
 settings[omega_demo_regions_list][content] = content
+settings[omega_demo_regions_list][footer] = footer
 settings[omega_demo_regions_list][branding] = branding
 settings[omega_demo_regions_list][header] = header
 settings[omega_demo_regions_list][navigation] = navigation
@@ -68,7 +75,6 @@ settings[omega_demo_regions_list][highlighted] = highlighted
 settings[omega_demo_regions_list][help] = help
 settings[omega_demo_regions_list][sidebar_first] = sidebar_first
 settings[omega_demo_regions_list][sidebar_second] = sidebar_second
-settings[omega_demo_regions_list][footer] = footer
 settings[omega_toggle_extension_compatibility] = 1
 settings[omega_conditional_classes_html] = 1
 settings[omega_apple_touch] = 1
