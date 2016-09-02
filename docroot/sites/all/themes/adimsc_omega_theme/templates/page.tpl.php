@@ -99,6 +99,8 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
+    <section>
+    </section>
   </div>
 
   <footer class="l-footer" role="contentinfo">

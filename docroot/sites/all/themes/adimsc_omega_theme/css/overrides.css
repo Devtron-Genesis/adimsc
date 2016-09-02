@@ -51,6 +51,17 @@ body {
 .main-menu ul li ul.menu-dropdown li a {
   color: #bebebe;
 }
+/*Language Dropdown*/
+#block-lang-dropdown-language {
+  float: right;
+  padding-top: 12px;
+}
+.lang-dropdown-form img.language-icon {
+  margin-top: 2px;
+}
+.form-item-lang-dropdown-select {
+  float: right;
+}
 /* Media Queries */
 @media (max-width: 1400px) {
 
