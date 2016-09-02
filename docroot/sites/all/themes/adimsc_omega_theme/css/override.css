@@ -45,4 +45,27 @@
   margin-top: -15px;
   padding-top: 15px;
 }
+body #board-members-bg{
+  background:url(../images/about-chairman-img.png);
 
+}
+#board-members {
+  margin-left: 90px;
+}
+#board-members h1 {
+  margin-bottom: 50px;
+  font-size: 37px;
+}
+#board-members ul li{
+  margin-bottom: 40px;
+  font-weight:normal;
+}
+#board-members .views-field-field-name {
+  color: #babaa7;
+  font-size: 17px;
+}
+#board-members .views-field-title {
+  color: #50befe;
+  font-size: 17px;
+  font-weight: bold;
+}
