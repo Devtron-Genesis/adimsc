@@ -30,9 +30,26 @@ body {
   padding: 0;
 }
 #drop-down-login-wrapper .button {
-  padding: 14px 10px;
+  padding: 15px 10px;
   color: #bebebe;
   background: none;
+}
+/*Main Menu Superfish*/
+#block-superfish-1 {
+  float: right;
+}
+.main-menu {
+  margin-top: 0;
+  border-right: 0;
+}
+.main-menu .sf-sub-indicator {
+  display: none;
+}
+.main-menu ul {
+  padding-top: 16px;
+}
+.main-menu ul li ul.menu-dropdown li a {
+  color: #bebebe;
 }
 /* Media Queries */
 @media (max-width: 1400px) {
