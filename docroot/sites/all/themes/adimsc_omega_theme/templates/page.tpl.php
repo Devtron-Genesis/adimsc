@@ -99,10 +99,19 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
-    <section>
-    </section>
   </div>
-
+   <section>
+      <?php if (!empty($page['home_left'])): ?>
+      <div class="banner-area banner">
+      <?php print render($page['home_left']); ?>
+      </div>
+      <?php endif; ?>
+      <?php if (!empty($page['home_right'])): ?>
+      <div class="news-area">
+      <?php print render($page['home_right']); ?>
+      </div>
+      <?php endif; ?>
+    </section>
   <footer class="l-footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
