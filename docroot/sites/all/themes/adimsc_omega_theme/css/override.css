@@ -31,9 +31,18 @@
 	padding: 10px 15px;
 }
 #top-menu ul li ul li:hover{
-background: #c63d41;
+  background: #c63d41;
 }
 #top-menu ul li ul li:hover a{
-color: #fff !important;
+  color: #fff !important;
+}
+#top-menu{
+  float: right;
+  border-right: 1px solid #393939;
+  margin-right: 10px;
+  padding-right: 10px;
+  min-height: 43px;
+  margin-top: -15px;
+  padding-top: 15px;
 }
 

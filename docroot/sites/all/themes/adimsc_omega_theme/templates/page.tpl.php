@@ -75,10 +75,10 @@
   <header class="l-header" role="banner">
     <div class="l-branding">
       <?php if (!empty($page['branding'])): ?>
-      <div id="top-menu" class="container-fluid main-menu admin menu-area top-social">
-    <?php print render($page['branding']); ?>
+      <div id="top-menu" class="container-fluid main-menu menu-area top-social">
+        <?php print render($page['branding']); ?>
       </div>
-  <?php endif; ?>
+    <?php endif; ?>
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
