@@ -1,3 +1,52 @@
-.site-logo img {
-  height: 126px;
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu-area {
+  padding: 0;
+}
+/*Social links Block*/
+#block-block-1 {
+  border-left: 1px solid #393939;
+  float: right;
+}
+.top-social ul {
+  padding-left: 15px;
+}
+/*Login Block*/
+#block-drop-down-login-drop-down-login {
+  float: right;
+  border-left: 1px solid #393939;
+}
+#drop-down-login-wrapper a {
+  font-family: 'CenturyGothic-Bold';
+  color: #bebebe;
+}
+#drop-down-login-wrapper.enable-dd .button span span  i {
+  margin-left: 8px;
+}
+#drop-down-login-wrapper.enable-dd .button span span {
+  background: none;
+  padding: 0;
+}
+#drop-down-login-wrapper .button {
+  padding: 14px 10px;
+  color: #bebebe;
+  background: none;
+}
+/* Media Queries */
+@media (max-width: 1400px) {
+
+}
+@media (min-width: 1040px) and (max-width: 1250px) {
+
+}
+@media (min-width: 769px) and (max-width: 1040px) {
+
+}
+@media (max-width: 769px) {
+
+}
+@media (max-width: 480px) {
+
 }

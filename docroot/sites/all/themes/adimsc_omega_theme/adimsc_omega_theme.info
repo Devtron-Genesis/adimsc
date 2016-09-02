@@ -10,8 +10,8 @@ version = 1.x
 ; Regions
 ; ========================================
 regions[content] = Content
-regions[footer] = Footer
 regions[top_bar] = Top Bar
+regions[footer] = Footer
 regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
@@ -71,8 +71,8 @@ settings[omega_livereload_host] = localhost
 settings[omega_livereload_port] = 35729
 settings[omega_demo_regions] = 1
 settings[omega_demo_regions_list][content] = content
-settings[omega_demo_regions_list][footer] = footer
 settings[omega_demo_regions_list][top_bar] = top_bar
+settings[omega_demo_regions_list][footer] = footer
 settings[omega_demo_regions_list][header] = header
 settings[omega_demo_regions_list][navigation] = navigation
 settings[omega_demo_regions_list][highlighted] = highlighted
