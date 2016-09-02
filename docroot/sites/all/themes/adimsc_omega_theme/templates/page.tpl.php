@@ -54,7 +54,7 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - $page['branding']: Items for the branding region.
+ * - $page['top_bar']: Items for the Top bar region.
  * - $page['header']: Items for the header region.
  * - $page['navigation']: Items for the navigation region.
  * - $page['help']: Dynamic help text, mostly for admin pages.
@@ -72,9 +72,10 @@
 ?>
 <div class="l-page">
   <header class="l-header" role="banner">
-    <div class="l-branding">
+    <div class="l-branding menu-area">
+      <?php print render($page['top_bar']); ?>
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <!-- <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a> -->
       <?php endif; ?>
     </div>
   </header>

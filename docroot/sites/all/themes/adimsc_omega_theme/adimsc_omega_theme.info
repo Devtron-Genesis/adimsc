@@ -11,7 +11,7 @@ version = 1.x
 ; ========================================
 regions[content] = Content
 regions[footer] = Footer
-regions[branding] = Branding
+regions[top_bar] = Top Bar
 regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
@@ -31,7 +31,7 @@ zones[footer] = Footer
 ; ========================================
 ; CSS and JS files
 ; ========================================
-stylesheets[all][] = css/bootstrap.css
+;stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/overrides.css
 scripts[] = js/bootstrap.min.js
@@ -72,7 +72,7 @@ settings[omega_livereload_port] = 35729
 settings[omega_demo_regions] = 1
 settings[omega_demo_regions_list][content] = content
 settings[omega_demo_regions_list][footer] = footer
-settings[omega_demo_regions_list][branding] = branding
+settings[omega_demo_regions_list][top_bar] = top_bar
 settings[omega_demo_regions_list][header] = header
 settings[omega_demo_regions_list][navigation] = navigation
 settings[omega_demo_regions_list][highlighted] = highlighted
