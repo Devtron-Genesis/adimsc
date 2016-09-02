@@ -1,0 +1,2393 @@
+html {
+  min-height: 100% !important;
+  position: relative !important;
+}
+
+body {
+  background: url(../images/bg-body.jpg) no-repeat center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: Calibri;
+  font-size: 12px;
+  margin-bottom: 200px;
+}
+
+::selection {
+  background: #0b6831;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(90,87,89,0.52);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a5759;
+}
+
+a {
+  text-decoration: none;
+  transition: all .5s ease;
+  color: #52befc;
+}
+
+a:hover {
+  color: #c63d41 !important;
+  text-decoration: none;
+  outline: 0;
+}
+
+a.active {
+  color: #c63d41 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,h2 {
+  font-family: 'CenturyGothic';
+  color: #52befc;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/*
+==========================================================
+GLOBAL CLASSES
+==========================================================
+*/
+.visible-1040 {
+  display: none;
+}
+
+.last {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn {
+  font-family: 'CenturyGothic-Bold';
+  text-transform: uppercase;
+  padding: 8px 10px;
+}
+
+.btn-danger {
+  background: #c63d41;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #a12f32;
+  color: #fff !important;
+}
+
+.btn-default {
+  background: url(../images/btn-background.png) no-repeat center;
+  width: 171px;
+  height: 31px;
+  text-align: center;
+  font-size: 13px;
+  font-family: Calibri;
+  font-style: italic;
+  color: #52befc;
+  padding-top: 6px;
+}
+
+.menu-btn {
+  background: #c63d41;
+  position: absolute;
+  right: 10px;
+  z-index: 1000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.menu-btn i {
+  transition: all .5s ease;
+}
+
+.menu-btn:hover {
+  background: #a12f32;
+}
+
+.close-btn {
+  background: rgba(0,0,0,0.80);
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 100;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 4px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+/*
+==========================================================
+TOP MENU SECTION
+==========================================================
+*/
+.menu-area {
+  position: relative;
+  background: #000;
+  float: left;
+  width: 100%;
+  height: 43px;
+  text-align: right;
+  padding: 15px 10px 0 0;
+}
+
+.logo {
+  position: absolute;
+  top: 43px;
+  z-index: 100;
+}
+
+/*Langue*/
+.language {
+  background: #000;
+  float: right;
+  transition: all .5s ease;
+  display: inline-block;
+  height: 20px;
+  text-align: left;
+  margin-right: 22px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.language:hover {
+  height: inherit;
+}
+
+.language ul li {
+  margin-bottom: 10px;
+}
+
+.language ul li a {
+  display: inline-block;
+  font-size: 11px;
+  color: #4d4d4d;
+}
+
+.language ul li a i {
+  margin-right: 10px;
+}
+
+/*Main Menu*/
+.main-menu {
+  display: inline-block;
+  float: right;
+  height: 43px;
+  border-right: 1px solid #393939;
+  border-left: 1px solid #393939;
+  margin-top: -15px;
+  margin-right: 10px;
+  padding: 0 25px;
+}
+
+.main-menu ul {
+  padding-top: 15px;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu ul li a {
+  padding-bottom: 13px;
+}
+
+.main-menu ul li:hover .menu-dropdown {
+  display: block;
+}
+
+.main-menu ul li ul.menu-dropdown {
+  padding: 0;
+}
+
+.main-menu ul li ul.menu-dropdown li a {
+  width: 100%;
+  display: inline-block;
+  font-family: Calibri;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 28px;
+  left: 0;
+  text-align: left;
+  padding: 0;
+}
+
+.menu-dropdown li {
+  background: #000;
+  width: 168px;
+  margin-bottom: 1px;
+}
+
+.menu-dropdown li:hover {
+  background: #c63d41;
+}
+
+.menu-dropdown li:hover a {
+  color: #fff !important;
+}
+
+.menu-dropdown li a.active {
+  background: #c63d41;
+  color: #fff !important;
+}
+
+.main-menu ul li a {
+  font-family: 'CenturyGothic-Bold';
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #bebebe;
+  margin-left: 15px;
+}
+
+.main-menu ul li a:last-child {
+  margin-left: 0;
+}
+
+/*Push Menu*/
+.push-menu {
+  background: #c63d41;
+  position: fixed;
+  top: 0;
+  right: 0;
+  //right: -250px;
+  height: 100%;
+  width: 250px;
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+.push-menu a {
+  color: #f1f1f1;
+}
+
+.push-menu a:hover {
+  color: #fff !important;
+}
+
+.push-menu .top-social {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.push-menu .top-social ul {
+  margin-bottom: 10px;
+}
+
+.push-menu .top-social ul li a {
+  color: #fff;
+}
+
+.push-menu .top-social ul li a:hover {
+  color: #fff !important;
+}
+
+.push-menu .top-social .btn-danger {
+  display: block;
+  border: 3px solid #a12f32;
+}
+
+.push-menu .nav {
+  margin-bottom: 20px;
+}
+
+.push-menu .nav ul li {
+  position: relative;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.push-menu .nav ul li:hover .dropdown {
+  display: block;
+}
+
+.push-menu .nav ul li .dropdown {
+  display: none;
+  background: #a12f32;
+  padding: 10px;
+  margin-top: 10px;
+  transition: all .5s ease;
+}
+
+.push-menu .nav ul li .dropdown li {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.push-menu .nav ul li .dropdown li:last-child {
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.push-menu .nav ul li .dropdown li a {
+  font-size: 14px;
+}
+
+.push-menu .nav ul li a {
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+.push-menu .nav ul li a:hover {
+  color: #fff !important;
+}
+
+.push-menu .nav ul li a.active {
+  color: #fff !important;
+}
+
+.push-menu .lang {
+  margin-top: 20px;
+}
+
+.push-menu .lang ul li a {
+  margin-bottom: 5px;
+}
+
+.push-menu .lang ul li a i {
+  margin-right: 3px;
+}
+
+.push-menu .admin {
+  float: right;
+  color: inherit;
+  border: 0;
+  padding: 0;
+}
+
+.push-menu .admin a {
+  color: #f1f1f1;
+}
+
+/*Social Icons*/
+.top-social {
+  float: right;
+}
+
+.top-social ul {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.top-social ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.top-social ul li:last-child {
+  margin-right: 0;
+}
+
+.top-social ul li a {
+  color: #888889;
+  font-size: 15px;
+}
+
+.admin {
+  float: right;
+  border-right: 1px solid #393939;
+  margin-right: 10px;
+  padding-right: 10px;
+  min-height: 43px;
+  margin-top: -15px;
+  padding-top: 15px;
+}
+
+.admin a {
+  font-family: 'CenturyGothic-Bold';
+  color: #bebebe;
+}
+
+.admin a i {
+  margin-left: 7px;
+}
+
+.mobile-header {
+  float: left;
+  padding: 20px;
+}
+
+.mobile-logo {
+  float: left;
+  margin-right: 20px;
+  width: 22%;
+}
+
+.tagline {
+  float: left;
+  width: 70%;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.tagline h1 span {
+  color: #c63d41;
+}
+
+/*
+==========================================================
+BANNER AAREA
+==========================================================
+*/
+section {
+  float: left;
+  width: 100%;
+/*position: relative;*/
+}
+
+.banner-area {
+  float: left;
+  width: 83%;
+}
+
+.banner .carousel-caption {
+  background: url(../images/vertical-line.png) no-repeat left top;
+  max-width: 609px;
+  text-align: left;
+  right: 0;
+  left: 90px;
+  padding: 0;
+  padding-left: 22px;
+}
+
+.banner .carousel .item {
+  -webkit-transition: opacity 8s;
+  -moz-transition: opacity 8s;
+  -ms-transition: opacity 8s;
+  -o-transition: opacity 8s;
+  transition: opacity 8s;
+}
+
+.banner .carousel .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.banner .carousel .next {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+/*
+==========================================================
+NEWS SECTION
+==========================================================
+*/
+.news-area {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  z-index: 100;
+  width: 47.3%;
+}
+
+.latest-news {
+  background: url(../images/line-seprator.png) no-repeat left bottom;
+  position: relative;
+  float: left;
+  padding-bottom: 35px;
+  margin-bottom: 45px;
+}
+
+.latest-news .carousel-control {
+  background: rgba(255,255,255,0.20);
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  top: 30px;
+  border-radius: 50%;
+  text-shadow: none;
+  padding-top: 0;
+  font-size: 30px;
+  color: #fff;
+}
+
+.latest-news .carousel-control.left {
+  left: -70px;
+}
+
+.latest-news .carousel-control.right {
+  right: -70px;
+}
+
+.latest-news .btn-default {
+  float: left;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+}
+
+.news-tab {
+  margin-right: 20px;
+}
+
+.news-img {
+  float: left;
+  width: 184px;
+  margin-right: 20px;
+}
+
+.news-bio {
+  font-family: Calibri;
+  font-weight: 700;
+  float: left;
+  width: 154px;
+  line-height: 14px;
+}
+
+.news-bio h3 span {
+  color: #fff;
+}
+
+/*Video img*/
+.video-player img {
+  width: 100%;
+}
+
+.video-description {
+  background: rgba(0,0,0,0.52);
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+.video-title-area {
+  float: left;
+}
+
+.video-flag {
+  float: left;
+  width: 43px;
+  margin-right: 13px;
+}
+
+.video-title {
+  float: left;
+  width: 50%;
+}
+
+.video-title h2 {
+  font-family: Calibri;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.video-title .date {
+  font-size: 16px;
+}
+
+.video-title .date i {
+  margin-right: 8px;
+}
+
+.video-timer {
+  float: left;
+  text-transform: uppercase;
+}
+
+.time-block {
+  position: relative;
+  font-family: 'CenturyGothic';
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.time-block span {
+  display: block;
+  font-size: 14px;
+}
+
+.time-block i {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-style: normal;
+}
+
+/*
+==========================================================
+FOOTER FLAGS
+==========================================================
+*/
+.footer-flags {
+  position: absolute;
+  bottom: 0;
+  background: #292929;
+  float: left;
+  width: 100%;
+  height: 26px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.footer-flags ul {
+  position: relative;
+  width: 3550px;
+}
+
+.footer-flags li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-flags li.first {
+  animation: bannermove 30s linear infinite;
+  -webkit-animation: bannermove 30s linear infinite;
+}
+
+.footer-flags ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-flags ul li i {
+  margin-right: 3px;
+}
+
+/*keyframe animations*/
+@keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1300px;
+  }
+}
+
+@-moz-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1300px;
+  }
+}
+
+@-webkit-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1300px;
+  }
+}
+
+@-ms-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1300px;
+  }
+}
+
+@-o-keyframes bannermove {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1300px;
+  }
+}
+
+/*
+==========================================================
+ABOUT CHAIRMAN PAGE STYLES
+==========================================================
+*/
+#adimisc-calendar .section-cover {
+  min-height: 908px;
+}
+
+.section-cover {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  float: left;
+  width: 100%;
+  min-height: 908px;
+}
+
+.content-area {
+  position: absolute;
+  top: 205px;
+  left: 200px;
+  color: #bababa;
+  font-size: 13.5px;
+}
+
+.content-area h1 {
+  font-size: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.chairman-img {
+  float: left;
+  max-width: 300px;
+  margin-right: 30px;
+}
+
+.chairman-img img {
+  margin-bottom: 14px;
+}
+
+.chairman-bio {
+  float: left;
+  width: 50%;
+}
+
+/*
+==========================================================
+BOARD MEMBER PAGE STYLES
+==========================================================
+*/
+.board-members {
+  font-size: 17px;
+}
+
+.board-members h1 {
+  margin-bottom: 50px;
+}
+
+.board-members ul li {
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.board-members ul li strong {
+  color: #50befe;
+}
+
+/*
+==========================================================
+ABOUT US STYLES
+==========================================================
+*/
+.text-col {
+  float: left;
+  max-width: 429px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+/*
+==========================================================
+CONTACT US STYLES
+==========================================================
+*/
+.contact-us h1 {
+  margin-bottom: 40px;
+}
+
+.adress-col {
+  float: left;
+  max-width: 300px;
+  margin-right: 65px;
+}
+
+.location {
+  font-family: 'CenturyGothic';
+  margin-bottom: 35px;
+}
+
+.location ul li span {
+  font-family: 'CenturyGothic-Bold';
+  color: #52befc;
+}
+
+.location ul li {
+  margin-bottom: 7px;
+}
+
+.location ul li.margin-top {
+  margin-top: 24px;
+}
+
+.map-col {
+  float: left;
+}
+
+.map-col iframe {
+  max-width: 830px;
+  height: 520px;
+}
+
+/*
+==========================================================
+TEAM CALENDER STYLES
+==========================================================
+*/
+.section-cover.team {
+  margin-bottom: 50px;
+}
+
+.team-calender h1 span {
+  font-family: 'CenturyGothic-Bold';
+  color: #b9e2fa;
+}
+
+.teams-area {
+  max-width: 1166px;
+  height: 696px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 22px;
+}
+
+.teams-area ul li {
+  border: 1px solid #37373b;
+  margin-bottom: 12px;
+  float: left;
+  width: 100%;
+}
+
+.teams-area ul li .team-logo {
+  background: url(../images/bg-logo1.gif) repeat-x;
+  float: left;
+  width: 17.6%;
+  height: 129px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.teams-area ul li .team-country-img {
+  float: left;
+  width: 59%;
+  height: 129px;
+  overflow: hidden;
+}
+
+.teams-area ul li .team-country-img img {
+  width: 100%;
+}
+
+.teams-area ul li .team-location {
+  float: left;
+  background: url(../images/bg-logo1.gif) repeat-x;
+  width: 23.4%;
+  height: 129px;
+  padding-top: 45px;
+  padding-left: 10px;
+}
+
+.teams-area ul li .team-location .team-flag {
+  float: left;
+  width: 62px;
+  margin-right: 11px;
+}
+
+.teams-area ul li .team-location .location-title {
+  float: left;
+}
+
+.teams-area ul li .team-location .location-title h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.teams-area ul li .team-location .location-title span {
+  font-family: Calibri;
+  font-weight: 700;
+  color: #52befc;
+}
+
+.teams-area ul li .img-responsive {
+  display: inline-block !important;
+}
+
+/*
+==========================================================
+Facilities STYLES
+==========================================================
+*/
+.facilities-div {
+  max-width: 633px;
+}
+
+/*
+==========================================================
+NEWS STYLES
+==========================================================
+*/
+.news-wrapper {
+  float: left;
+  position: relative;
+  max-width: 1322px;
+  margin-bottom: 40px;
+}
+
+.news-detail-col {
+  float: left;
+  width: 60%;
+}
+
+.news-detail-col .menu-btn {
+  position: static;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.news-detail-col img {
+  margin-bottom: 25px;
+}
+
+.news-detail-col h2 {
+  font-family: 'CenturyGothic-Bold';
+  font-size: 17px;
+}
+
+.news-tabs-cover {
+  float: right;
+  width: 36%;
+}
+
+.news-tabs-col {
+  float: left;
+  width: 100%;
+  height: 622px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.news-tabs-col ul {
+  float: left;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.news-tabs-col ul li {
+  background: rgba(0,0,0,0.52);
+  float: left;
+  width: 100%;
+  padding: 7px 7px 7px 25px;
+  margin-bottom: 1px;
+}
+
+.news-tabs-col ul li.active {
+  background: #5a5759;
+}
+
+.news-tabs-col ul li a h3 {
+  font-family: 'CenturyGothic-Bold';
+  font-size: 13px;
+  color: #c7d0d9;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+.news-tabs-col ul li a span {
+  color: #52befc;
+  font-size: 14px;
+}
+
+.news-tabs-col ul li a img {
+  float: right;
+  width: 90px;
+  height: 90px;
+  margin-left: 40px;
+}
+
+.news-tabs-col ul li .news-title {
+  float: left;
+  width: 68%;
+}
+
+.news-date {
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.news-date select {
+  background: #0b6831;
+  float: left;
+  width: 145px;
+  height: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  border: 0;
+  appearance: none;
+  border-radius: 0;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.news-date select option::-webkit-scrollbar {
+  width: 1em;
+}
+
+.news-date select option::-webkit-scrollbar-track {
+  background: rgba(90,87,89,0.52);
+}
+
+.news-date select option::-webkit-scrollbar-thumb {
+  background-color: #5a5759;
+}
+
+/*RACE AND DRIVERS PAGE STYELS*/
+body#teamPage .section-cover {
+  min-height: inherit;
+  margin-bottom: 20px;
+}
+
+.race-detail-area {
+  float: left;
+  width: 100%;
+  min-width: 908px;
+}
+
+.race-img {
+  background-size: cover;
+  position: relative;
+  float: left;
+  width: 20%;
+}
+
+.race-img img.logo {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.race-detail {
+  float: left;
+  width: 80%;
+}
+
+.race-detail-tabs {
+  float: left;
+  width: 13.5%;
+}
+
+.race-detail-tabs ul li {
+  background: url(../images/tab-bg.png) no-repeat center;
+  width: 100%;
+  height: 170px;
+  text-align: center;
+}
+
+.race-detail-tabs ul li a {
+  float: left;
+  width: 100%;
+  padding-top: 40px;
+  font-size: 14.5px;
+  color: #bababa;
+  text-transform: uppercase;
+}
+
+.race-detail-tabs ul li a:hover {
+  color: #bababa !important;
+}
+
+.race-detail-tabs ul li a i {
+  float: left;
+  width: 100%;
+  height: 81px;
+}
+
+.race-detail-tabs ul li a.about-race i {
+  background: url(../images/about-race.png) no-repeat top;
+}
+
+.race-detail-tabs ul li a.about-race:hover i,.race-detail-tabs ul li.active a.about-race i {
+  background: url(../images/about-race-hover.png) no-repeat center;
+}
+
+.race-detail-tabs ul li a.about-team i {
+  background: url(../images/about-team.png) no-repeat top;
+}
+
+.race-detail-tabs ul li a.about-team:hover i,.race-detail-tabs ul li.active a.about-team i {
+  background: url(../images/about-team-hover.png) no-repeat center;
+}
+
+.race-detail-tabs ul li a.team-members i {
+  background: url(../images/team-members.png) no-repeat top;
+}
+
+.race-detail-tabs ul li a.team-members:hover i,.race-detail-tabs ul li.active a.team-members i {
+  background: url(../images/team-members-hover.png) no-repeat center;
+}
+
+.race-detail-tabs ul li a.photo-gallery i {
+  background: url(../images/photo-gallery.png) no-repeat top;
+}
+
+.race-detail-tabs ul li a.photo-gallery:hover i,.race-detail-tabs ul li.active a.photo-gallery i {
+  background: url(../images/photo-gallery-hover.png) no-repeat center;
+}
+
+.race-detail-tabs ul li a.video-gallery i {
+  background: url(../images/video-gallery.png) no-repeat top;
+}
+
+.race-detail-tabs ul li a.video-gallery:hover i,.race-detail-tabs ul li.active a.video-gallery i {
+  background: url(../images/video-gallery-hover.png) no-repeat center;
+}
+
+.race-detail-content {
+  float: right;
+  width: 84%;
+  color: #c2c2c2;
+  font-size: 14px;
+  margin-top: 130px;
+}
+
+.race-detail-content h1 {
+  font-family: 'CenturyGothic';
+  font-weight: 400;
+  font-size: 37px;
+  color: #f5a249;
+  text-transform: uppercase;
+}
+
+.race-detail-content h2 {
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: 24.5px;
+  color: #52befc;
+  text-transform: uppercase;
+}
+
+.race-detail-content h3 {
+  font-family: 'CenturyGothic';
+  color: #52fc8e;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.race-detail-content .left-section {
+  float: left;
+  width: 37%;
+  margin-bottom: 35px;
+  margin-right: 34px;
+}
+
+.race-detail-content .left-section p {
+  text-align: justify;
+}
+
+.race-detail-content .right-section {
+  float: left;
+  width: 56%;
+}
+
+.race-detail-content #teamMembers {
+  width: 100%;
+  background: url(../images/bg-team-members.png) no-repeat right;
+  min-height: 904px;
+  margin-left: -51px;
+}
+
+.race-detail-content #teamMembers .left-section {
+  margin-left: 50px;
+}
+
+.race-detail-content #teamMembers .right-section {
+  margin-left: 50px;
+  width: 45%;
+}
+
+.race-detail-content #teamMembers .right-section .bio-block {
+  margin-bottom: 25px;
+}
+
+.race-detail-content #teamMembers .right-section .bio-block span {
+  float: left;
+  width: 100%;
+  color: #52befc;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.race-detail-content #teamMembers .right-section .bio-block ul li {
+  color: #c2c2c2;
+}
+
+.race-detail-content #teamMembers .right-section .bio-block ul.plamares {
+  float: left;
+  width: 50%;
+}
+
+.race-detail-content .photo-tab {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  border: 1px solid rgba(100,98,101,0.60);
+}
+
+.race-detail-content .photo-tab img {
+  width: 245px;
+}
+
+.video-carousel .carousel-control.right {
+  background: #000;
+  width: 45px;
+  height: 93px;
+  opacity: 1;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+.video-carousel ul li {
+  background: #333;
+  float: left;
+  width: 32%;
+  padding: 8px;
+  min-height: 74px;
+  margin-right: 12px;
+  border: 1px solid #000;
+}
+
+.video-carousel ul li p {
+  margin-bottom: 0;
+}
+
+.video-carousel ul li .video-thumb {
+  float: left;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.video-carousel ul li .video-thumb img {
+  width: 100%;
+}
+
+.video-carousel ul li .thumb-bio {
+  float: left;
+  width: 50%;
+}
+
+/*
+==========================================================
+RACERS ADN DRIVERS PAGE STYLE
+==========================================================
+*/
+.racer-img {
+  position: relative;
+  float: left;
+  width: 20%;
+  transition: all .5s ease;
+  filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.racers-index .carousel-control {
+  width: auto;
+  background: none;
+  font-size: 60px;
+  top: 40%;
+  opacity: 1;
+}
+
+.racers-index .carousel-control.right {
+  right: 20px;
+}
+
+.racers-index .carousel-control.left {
+  left: 20px;
+}
+
+.racer-img.active {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.racer-img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.racer-img a.btn-default {
+  background: url(../images/bg-racer-btn.png) no-repeat center;
+  position: absolute;
+  top: 130px;
+  width: 231px;
+  height: 31px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #ffcd94;
+}
+
+/*
+==========================================================
+ADIMIC CALENDAR
+==========================================================
+*/
+.adimsc-calander {
+  float: left;
+}
+
+.adimsc-calander h1 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.adimsc-calander h1 span {
+  font-family: 'CenturyGothic-Bold';
+  color: #52befc;
+}
+
+.events-calander {
+  float: left;
+  max-width: 950px;
+  height: 565px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.event-month {
+  float: left;
+  position: relative;
+  padding-left: 46px;
+}
+
+.event-month ul {
+  float: left;
+  border-left: 2px solid #d77627;
+}
+
+.event-month .month {
+  background: url(../images/bg-month.png) no-repeat center;
+  position: absolute;
+  left: 0;
+  float: left;
+  width: 46px;
+  height: 31px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.event-month ul li {
+  float: left;
+  width: 100%;
+}
+
+.event-month ul li .event-location {
+  background: url(../images/bg-date.gif) repeat;
+  float: left;
+  width: 554px;
+  height: 57px;
+  margin-right: 7px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.event-month ul li .event-date {
+  background: url(../images/bg-date.gif) repeat;
+  float: left;
+  width: 303px;
+  height: 57px;
+  text-align: center;
+  font-size: 21px;
+  color: #fdbb5b;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.event-month ul li.active .event-month {
+  background: #000;
+}
+
+.event-month ul li.active .event-date {
+  background: #000;
+}
+
+/*
+==========================================================
+MEDIA QURIES
+==========================================================
+*/
+/*
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+.news-area {
+	right: 20px;
+}
+.text-col{
+	max-width:100%;
+}
+.content-area{
+	left:45px;
+}
+
+}
+*/
+@media (max-width: 1400px) {
+  .banner-area {
+    width: 73%;
+  }
+
+  .banner .carousel-inner {
+    overflow: visible;
+  }
+
+  .banner .carousel-caption {
+    max-width: 509px;
+    bottom: -50px;
+  }
+
+  #news .content-area {
+    left: 50px;
+  }
+
+  .news-area {
+    z-index: 100;
+    width: 43%;
+  }
+
+  .news-tab {
+    width: 49%;
+    margin: 0;
+  }
+
+  .news-img {
+    width: 52%;
+    margin-right: 10px;
+  }
+
+  .news-bio {
+    width: 43%;
+    font-size: 12px;
+  }
+
+  .news-bio h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .video-title-area {
+    width: 48%;
+  }
+
+  .video-timer {
+    width: 52%;
+  }
+
+  .video-title {
+    width: 70%;
+  }
+
+  .video-title h2 {
+    font-size: 13px;
+  }
+
+  .video-title .date {
+    font-size: 11px;
+  }
+
+  .time-block {
+    font-size: 23px;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+  .time-block span {
+    display: block;
+    font-size: 12px;
+  }
+
+  .section-cover {
+    min-height: 850px;
+  }
+
+  .content-area {
+    left: 100px;
+  }
+
+  .event-month ul li .event-location {
+    width: 63%;
+  }
+
+  .event-month ul li .event-date {
+    width: 34%;
+  }
+
+  /*.footer-flags {
+  	position: static;
+  }*/
+  .news-tabs-col ul li .news-title {
+    width: 73%;
+  }
+
+  .news-tabs-col ul li a img {
+    width: 21%;
+    margin-left: 20px;
+  }
+
+  .race-detail-tabs ul li {
+    height: 130px;
+  }
+
+  .race-detail-tabs ul li a i {
+    height: 46px;
+  }
+
+  .race-detail-tabs ul li a.about-race i {
+    background: url(../images/1400-about-race.png) no-repeat top;
+  }
+
+  .race-detail-tabs ul li a.about-race:hover i,.race-detail-tabs ul li.active a.about-race i {
+    background: url(../images/1400-about-race-hover.png) no-repeat center;
+  }
+
+  .race-detail-tabs ul li a.about-team i {
+    background: url(../images/1400-about-team.png) no-repeat top;
+  }
+
+  .race-detail-tabs ul li a.about-team:hover i,.race-detail-tabs ul li.active a.about-team i {
+    background: url(../images/1400-about-team-hover.png) no-repeat center;
+  }
+
+  .race-detail-tabs ul li a.team-members i {
+    background: url(../images/1400-team-members.png) no-repeat top;
+  }
+
+  .race-detail-tabs ul li a.team-members:hover i,.race-detail-tabs ul li.active a.team-members i {
+    background: url(../images/1400-team-members-hover.png) no-repeat center;
+  }
+
+  .race-detail-tabs ul li a.photo-gallery i {
+    background: url(../images/1400-photo-gallery.png) no-repeat top;
+  }
+
+  .race-detail-tabs ul li a.photo-gallery:hover i,.race-detail-tabs ul li.active a.photo-gallery i {
+    background: url(../images/1400-photo-gallery-hover.png) no-repeat center;
+  }
+
+  .race-detail-tabs ul li a.video-gallery i {
+    background: url(../images/1400-video-gallery.png) no-repeat top;
+  }
+
+  .race-detail-tabs ul li a.video-gallery:hover i,.race-detail-tabs ul li.active a.video-gallery i {
+    background: url(../images/1400-video-gallery-hover.png) no-repeat center;
+  }
+
+  .race-detail-content h1 {
+    font-size: 32px;
+  }
+
+  .race-detail-content {
+    margin-top: 50px;
+  }
+
+  .race-detail-content #teamMembers .left-section {
+    margin: 0;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1250px) {
+  h1,h2 {
+    font-size: 20px;
+  }
+
+  .banner-area {
+    width: 66%;
+  }
+
+  .news-area {
+    z-index: 100;
+    width: 38%;
+  }
+
+  .banner .carousel-caption {
+    width: 65%;
+    left: 50px;
+    bottom: -150px;
+  }
+
+  .banner .carousel-caption h1 {
+  }
+
+  .news-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .news-bio {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .video-title-area {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .video-timer {
+    width: 100%;
+  }
+
+  .news-tabs-col ul li .news-title {
+    width: 70%;
+  }
+
+  .news-tabs-col ul li a img {
+    width: 21%;
+    margin-left: 20px;
+  }
+
+  /*TEAM PAGE STYLES*/
+  .teams-area ul li .team-logo {
+    padding: 30px 0 0;
+  }
+
+  .teams-area ul li .team-logo img {
+    display: inline-block;
+  }
+
+  .teams-area ul li .team-country-img img {
+    width: auto;
+    height: 129px;
+  }
+
+  .teams-area ul li .team-location {
+    text-align: center;
+    padding: 25px 10px 0;
+  }
+
+  .teams-area ul li .team-location .team-flag {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .teams-area ul li .team-location .team-flag img {
+    display: inline-block;
+  }
+
+  .teams-area ul li .team-location .location-title {
+    width: 100%;
+  }
+
+  .teams-area ul li .team-location .location-title h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .race-detail-content .left-section {
+    width: 100%;
+    margin: 0;
+    padding-right: 20px;
+  }
+
+  .race-detail-content .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .race-detail-content #teamMembers .right-section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1040px) {
+  body.push {
+    position: relative;
+  }
+
+  .visible-1040 {
+    display: block !important;
+  }
+
+  h1,h2 {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  .menu-area {
+    height: inherit;
+    margin: 0 -20px;
+  }
+
+  .logo {
+    top: 86px;
+    left: 30px;
+  }
+
+  .main-menu {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .language {
+    position: absolute;
+  }
+
+  .banner-area {
+    margin: 0 -20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .latest-news h2 {
+    margin-left: 53px;
+  }
+
+  .news-area {
+    position: static;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .banner .carousel-caption {
+    width: 100%;
+    left: 50px;
+    bottom: 0;
+  }
+
+  .latest-news .carousel-control.left {
+    left: 0;
+  }
+
+  .latest-news .carousel-control.right {
+    right: 0;
+  }
+
+  .news-tab {
+    float: right !important;
+    width: 47%;
+  }
+
+  .news-img {
+    width: 40%;
+  }
+
+  .news-bio {
+    width: 50%;
+  }
+
+  .video-description {
+    margin-bottom: 20px;
+  }
+
+  .news-tabs-col ul li .news-title {
+    width: 100%;
+  }
+
+  .news-tabs-col ul li a img {
+    display: none;
+  }
+
+  /* TEAM PAGE STYLES */
+  .teams-area ul li .team-logo {
+    padding: 41px 10px;
+  }
+
+  .teams-area ul li .team-country-img img {
+    width: auto;
+    height: 129px;
+  }
+
+  .teams-area ul li .team-location {
+    text-align: center;
+    padding: 25px 10px 0;
+  }
+
+  .teams-area ul li .team-location .team-flag {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .teams-area ul li .team-location .team-flag img {
+    display: inline-block;
+  }
+
+  .teams-area ul li .team-location .location-title {
+    width: 100%;
+  }
+
+  .teams-area ul li .team-location .location-title h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .race-detail-tabs {
+    background: #000;
+    position: absolute;
+    width: 150px;
+    z-index: 1000;
+    left: -170px;
+  }
+
+  .race-detail-area {
+    min-width: inherit;
+  }
+
+  .race-detail {
+    width: 100%;
+  }
+
+  .race-detail-content {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .race-detail-content .menu-btn {
+    left: 20px;
+    top: -55px;
+  }
+
+  .race-img {
+    display: none;
+  }
+
+  .race-detail-content .left-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .race-detail-content .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  body#teamPage .menu-area {
+    display: none;
+  }
+
+  body#teamPage .mobile-header {
+    display: block !important;
+  }
+}
+
+@media (max-width: 769px) {
+  body.push {
+    position: relative;
+  }
+
+  .visible-xs {
+    display: block !important;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  #adimisc-calendar .section-cover {
+    min-height: inherit;
+  }
+
+  .menu-area {
+    display: none !important;
+  }
+
+  .banner-area {
+    width: 100%;
+  }
+
+  .banner .carousel-caption {
+    background: none;
+    position: static;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0 10px;
+    text-align: justify;
+  }
+
+  .news-area {
+    position: static;
+    width: 100%;
+  }
+
+  .latest-news {
+    background: none;
+    margin-left: 10px;
+  }
+
+  .latest-news .btn-default {
+    left: 10px;
+    bottom: 0;
+  }
+
+  .news-tab {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .news-img {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .news-img img {
+    width: 100%;
+  }
+
+  .news-bio {
+    font-family: Calibri;
+    font-weight: 700;
+    float: left;
+    width: 40%;
+    line-height: 14px;
+  }
+
+  .video-description {
+    background: none;
+  }
+
+  .video-title-area {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .video-title {
+    width: auto;
+  }
+
+  .video-timer {
+    padding: 10px;
+    width: 100%;
+    background: rgba(0,0,0,0.52);
+    text-align: center;
+  }
+
+  .time-block {
+    float: none;
+    display: inline-block;
+  }
+
+  .footer-flags {
+    position: static;
+  }
+
+  /*ABOUT CHAIRMAN STYLES*/
+  .section-cover.team {
+    margin-bottom: 0;
+  }
+
+  .content-area h1 {
+    font-size: 24px;
+  }
+
+  .content-area h3 {
+    font-size: 22px;
+  }
+
+  .content-area {
+    position: static;
+    padding: 50px 20px;
+  }
+
+  .chairman-img {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .chairman-bio {
+    width: 100%;
+  }
+
+  /*BOARD MEMBERS STYLES*/
+  .board-members {
+    font-size: 14px;
+  }
+
+  .board-members h1 {
+    margin-bottom: 20px;
+  }
+
+  .board-members ul li {
+    margin-bottom: 20px;
+  }
+
+  /*BOARD MEMBERS STYLES*/
+  .text-col {
+    float: left;
+    max-width: 100%;
+    text-align: justify;
+    margin-right: 0;
+  }
+
+  /*CONTACT US STYLES*/
+  .contact-us h1 {
+    margin-bottom: 20px;
+  }
+
+  .adress-col {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .location {
+    margin-bottom: 25px;
+  }
+
+  .location ul li span {
+    font-family: 'CenturyGothic-Bold';
+    color: #52befc;
+  }
+
+  .location ul li {
+    margin-bottom: 5px;
+  }
+
+  .location ul li.margin-top {
+    margin-top: 18px;
+  }
+
+  .map-col iframe {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  /*NEWS PAGE STYLES*/
+  .news-wrapper {
+    width: 100%;
+  }
+
+  .news-detail-col {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .news-detail-col h2 {
+    font-size: 15px;
+  }
+
+  .news-tabs-cover {
+    background: rgba(0,0,0,0.70);
+    position: absolute;
+    left: -330px;
+    width: auto;
+    max-width: 300px;
+  }
+
+  .news-tabs-col ul {
+    float: left;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .news-tabs-col ul li {
+    background: rgba(0,0,0,0.52);
+    float: left;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 1px;
+  }
+
+  .news-tabs-col ul li.active {
+    background: #5a5759;
+  }
+
+  .news-tabs-col ul li a h3 {
+    font-family: 'CenturyGothic-Bold';
+    font-size: 13px;
+    color: #c7d0d9;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+
+  .news-tabs-col ul li a span {
+    color: #52befc;
+    font-size: 14px;
+  }
+
+  .news-tabs-col ul li a img {
+    display: none;
+  }
+
+  .news-tabs-col ul li .news-title {
+    float: left;
+    width: 100%;
+  }
+
+  .news-date {
+    float: right;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .news-date select {
+    float: left;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .section-cover {
+    min-height: 600px;
+  }
+
+  .video-description {
+    margin-bottom: 20px;
+  }
+
+  .event-month ul li .event-location {
+    width: 100%;
+  }
+
+  .event-month ul li .event-date {
+    width: 100%;
+  }
+
+  .racer-img {
+    width: 50%;
+  }
+
+  /* TEAM PAGE STYLES */
+  .teams-area ul li .team-logo {
+    padding: 41px 10px;
+  }
+
+  .teams-area ul li .team-country-img img {
+    width: auto;
+    height: 129px;
+  }
+
+  .teams-area ul li .team-location {
+    text-align: center;
+    padding: 25px 10px 0;
+  }
+
+  .teams-area ul li .team-location .team-flag {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .teams-area ul li .team-location .team-flag img {
+    display: inline-block;
+  }
+
+  .teams-area ul li .team-location .location-title {
+    width: 100%;
+  }
+
+  .teams-area ul li .team-location .location-title h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .race-detail-content h1 {
+    font-size: 25px;
+  }
+
+  .race-detail-tabs {
+    background: #000;
+    position: absolute;
+    width: 150px;
+    z-index: 1000;
+    left: -170px;
+  }
+
+  .race-detail-area {
+    min-width: inherit;
+  }
+
+  .race-detail {
+    width: 100%;
+  }
+
+  .race-detail-content {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .race-detail-content .menu-btn {
+    left: 20px;
+    top: -55px;
+  }
+
+  .race-img {
+    display: none;
+  }
+
+  .race-detail-content .left-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .race-detail-content .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .race-detail-content #teamMembers .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  body#teamPage .menu-area {
+    display: none;
+  }
+
+  body#teamPage .mobile-header {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,h2 {
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    right: 10px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding-top: 3px;
+  }
+
+  .tagline {
+    padding-top: 0;
+    width: 60%;
+  }
+
+  .tagline h1 {
+    font-size: 14px;
+  }
+
+  .banner .carousel-caption {
+    text-align: left;
+    width: 90%;
+    margin: 0 10px;
+  }
+
+  .video-title {
+    width: 80%;
+  }
+
+  .video-title h2 {
+    font-size: 12px;
+  }
+
+  .time-block {
+    font-size: 18px;
+    margin-right: 2px;
+    padding-right: 11px;
+  }
+
+  .time-block span {
+    font-size: 12px;
+  }
+
+  /*ABOUT CHAIRMAN STYLES*/
+  .content-area h1 {
+    font-size: 18px;
+  }
+
+  .racer-img a.btn-default {
+    display: none;
+  }
+
+  .teams-area ul li .team-logo {
+    display: none;
+  }
+
+  .teams-area ul li .team-country-img {
+    width: 70%;
+  }
+
+  .teams-area ul li .team-country-img {
+    width: 70%;
+  }
+
+  .teams-area ul li .team-location {
+    width: 30%;
+    padding: 28px 10px 0;
+  }
+
+  .teams-area ul li .team-location .team-flag {
+    display: none;
+  }
+
+  .teams-area ul li .team-location .location-title span {
+    font-size: 12px;
+  }
+}

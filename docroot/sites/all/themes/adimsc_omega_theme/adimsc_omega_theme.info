@@ -31,7 +31,11 @@ zones[footer] = Footer
 ; ========================================
 ; CSS and JS files
 ; ========================================
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/style.css
 stylesheets[all][] = css/overrides.css
+scripts[] = js/bootstrap.min.js
+scripts[] = js/application.js
 scripts[] = js/custom.js
 
 ; ========================================
