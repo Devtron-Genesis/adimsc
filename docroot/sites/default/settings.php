@@ -623,5 +623,5 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 // settings.php for development on your local workstation, set $db_url
 // (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
 if (file_exists('/var/www/site-php')) {
-  require('/var/www/site-php/adimsc/adimsc-sm-settings.inc');
+  require('/var/www/site-php/adimsc/adimsc-settings.inc');
 }

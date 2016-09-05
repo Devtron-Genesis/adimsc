@@ -101,11 +101,6 @@
     </div>
   </div>
    <section>
-      <?php if (!empty($page['home_carosal'])): ?>
-      <div id="news-carousel" class="latest-news pull-right">
-      <?php print render($page['home_carosal']); ?>
-      </div>
-      <?php endif; ?>
       <?php if (!empty($page['home_left'])): ?>
       <div class="banner-area banner">
       <?php print render($page['home_left']); ?>

@@ -11,7 +11,6 @@ version = 1.x
 ; ========================================
 regions[content] = Content
 regions[top_bar] = Top Bar
-regions[home_carosal] = Home Carosal
 regions[home_left] = Home Left
 regions[home_right] = Home Right
 regions[footer] = Footer
@@ -75,7 +74,6 @@ settings[omega_demo_regions_list][content] = content
 settings[omega_demo_regions_list][home_left] = home left
 settings[omega_demo_regions_list][home_right] = home right
 settings[omega_demo_regions_list][top_bar] = top_bar
-settings[omega_demo_regions_list][home_carosal] = Home Carosal
 settings[omega_demo_regions_list][footer] = footer
 settings[omega_demo_regions_list][header] = header
 settings[omega_demo_regions_list][help] = help
