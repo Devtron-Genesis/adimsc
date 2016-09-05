@@ -24,8 +24,8 @@ function event_content_type_home_counter_viewblock_image_default_styles() {
       2 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 20,
-          'height' => 20,
+          'width' => 40,
+          'height' => 30,
         ),
         'weight' => 1,
       ),

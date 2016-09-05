@@ -36,7 +36,11 @@ function event_content_type_home_counter_viewblock_views_default_views() {
   $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
   $handler->display->display_options['fields']['field_country_image']['field'] = 'field_country_image';
   $handler->display->display_options['fields']['field_country_image']['label'] = '';
+  $handler->display->display_options['fields']['field_country_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_country_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_country_image']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_country_image']['element_wrapper_class'] = 'video-flag';
+  $handler->display->display_options['fields']['field_country_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_country_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_country_image']['settings'] = array(
     'image_style' => 'home_event_counter_flag_image',
@@ -47,26 +51,71 @@ function event_content_type_home_counter_viewblock_views_default_views() {
   $handler->display->display_options['fields']['field_events_country']['table'] = 'field_data_field_events_country';
   $handler->display->display_options['fields']['field_events_country']['field'] = 'field_events_country';
   $handler->display->display_options['fields']['field_events_country']['label'] = '';
+  $handler->display->display_options['fields']['field_events_country']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_events_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_events_country']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['field_events_country']['element_wrapper_class'] = 'country';
+  $handler->display->display_options['fields']['field_events_country']['element_default_classes'] = FALSE;
   /* Field: Content: Event City */
   $handler->display->display_options['fields']['field_event_city']['id'] = 'field_event_city';
   $handler->display->display_options['fields']['field_event_city']['table'] = 'field_data_field_event_city';
   $handler->display->display_options['fields']['field_event_city']['field'] = 'field_event_city';
   $handler->display->display_options['fields']['field_event_city']['label'] = '';
+  $handler->display->display_options['fields']['field_event_city']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_city']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_city']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['field_event_city']['element_wrapper_class'] = 'city';
+  $handler->display->display_options['fields']['field_event_city']['element_default_classes'] = FALSE;
   /* Field: Content: Event Date */
   $handler->display->display_options['fields']['field_event_date_1']['id'] = 'field_event_date_1';
   $handler->display->display_options['fields']['field_event_date_1']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date_1']['field'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_date_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_date_1']['element_wrapper_class'] = 'date , fa fa-calendar-check-o';
+  $handler->display->display_options['fields']['field_event_date_1']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_event_date_1']['type'] = 'field_countdown_plain';
   /* Field: Content: Event Date */
   $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
   $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_date']['element_wrapper_class'] = 'video-timer';
+  $handler->display->display_options['fields']['field_event_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['field_api_classes'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="video-description">
+  <div class="video-title-area">
+    <div class="video-flag">
+      [field_country_image]
+    </div>
+    <div class="video-title">
+      <h2>[field_events_country]<br>
+      [field_event_city]</h2>
+      <div class="date">
+        <i aria-hidden="true" class="fa fa-calendar-check-o"></i>
+        <span>[field_event_date_1]</span>
+      </div>
+    </div>
+  </div>
+  <div class="video-timer">
+    [field_event_date]
+    <div class="time-block">
+      <span>Days</span> <span>hours</span> <span>Minutes</span>
+      <span>secounds</span>
+    </div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -97,6 +146,28 @@ function event_content_type_home_counter_viewblock_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<div class="video-description">
+  <div class="video-title-area">
+    <div class="video-flag">
+      [field_country_image]
+    </div>
+    <div class="video-title">
+      <h2>[field_events_country]<br>
+      [field_event_city]</h2>
+      <div class="date">
+        <i aria-hidden="true" class="fa fa-calendar-check-o"></i>
+        <span>[field_event_date_1]</span>
+      </div>
+    </div>
+  </div>
+  <div class="video-timer">
+    [field_event_date]
+    <div class="time-block">
+      <span>Days</span> <span>hours</span> <span>Minutes</span>
+      <span>secounds</span>
+    </div>
+  </div>
+</div>'),
     t('Block'),
   );
   $export['home_upcoming_event_conter'] = $view;

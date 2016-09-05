@@ -12,30 +12,6 @@ function home_youtube_video_content__views_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_image_default_styles().
- */
-function home_youtube_video_content__image_default_styles() {
-  $styles = array();
-
-  // Exported image style: home_event_counter_flag_image.
-  $styles['home_event_counter_flag_image'] = array(
-    'label' => 'Home Event Counter Flag Image',
-    'effects' => array(
-      2 => array(
-        'name' => 'image_resize',
-        'data' => array(
-          'width' => 40,
-          'height' => 30,
-        ),
-        'weight' => 1,
-      ),
-    ),
-  );
-
-  return $styles;
-}
-
-/**
  * Implements hook_node_info().
  */
 function home_youtube_video_content__node_info() {

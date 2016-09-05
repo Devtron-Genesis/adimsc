@@ -1,8 +1,8 @@
-name = Event Content type home counter viewblock
+name = Event Content type home counter viewblock 1.1
 description = Event Content type home counter viewblock
 core = 7.x
 package = Features
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = features
 dependencies[] = field_countdown
 dependencies[] = image
