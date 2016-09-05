@@ -228,6 +228,19 @@ body {
   margin-right: 5px;
   margin-left: 15px;
 }
+
+.btn-default {
+  background: url(../images/btn-background.png) no-repeat center;
+  width: 171px;
+  height: 31px;
+  text-align: center;
+  font-size: 100%
+  font-family: Calibri;
+  font-style: italic;
+  color: #52befc;
+  padding-top: 6px;
+}
+
 /* Media Queries */
 @media (max-width: 1400px) {
 
