@@ -39,12 +39,12 @@ function home_youtube_video_content__views_default_views() {
   $handler->display->display_options['fields']['field_youtube_video_link_']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_youtube_video_link_']['click_sort_column'] = 'input';
   $handler->display->display_options['fields']['field_youtube_video_link_']['settings'] = array(
-    'youtube_size' => '640x480',
-    'youtube_width' => '500',
-    'youtube_height' => '200',
+    'youtube_size' => 'custom',
+    'youtube_width' => '591',
+    'youtube_height' => '300',
     'youtube_autoplay' => 0,
     'youtube_loop' => 0,
-    'youtube_showinfo' => 1,
+    'youtube_showinfo' => 0,
     'youtube_controls' => 0,
     'youtube_autohide' => 0,
     'youtube_iv_load_policy' => 0,
@@ -78,6 +78,24 @@ function home_youtube_video_content__views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $translatables['youtube_home_vedio'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Page'),
+    t('Block'),
+  );
   $export['youtube_home_vedio'] = $view;
 
   return $export;

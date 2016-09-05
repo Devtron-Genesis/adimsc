@@ -34,10 +34,11 @@ zones[footer] = Footer
 ;stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/overrides.css
+stylesheets[all][] = css/jquery.countdown.css
 scripts[] = js/bootstrap.min.js
 scripts[] = js/application.js
 scripts[] = js/custom.js
-
+scripts[] = js/jquery.countdown.js
 ; ========================================
 ; Settings
 ; ========================================
