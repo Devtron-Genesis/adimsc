@@ -112,7 +112,9 @@
       </div>
       <?php endif; ?>
     </section>
-  <footer class="l-footer" role="contentinfo">
+    <?php if (!empty($page['footer'])): ?>
+  <footer class="footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
+  <?php endif; ?>
 </div>
