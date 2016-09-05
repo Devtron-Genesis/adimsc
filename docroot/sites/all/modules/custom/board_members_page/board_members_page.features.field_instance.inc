@@ -1,0 +1,112 @@
+<?php
+/**
+ * @file
+ * board_members_page.features.field_instance.inc
+ */
+
+/**
+ * Implements hook_field_default_field_instances().
+ */
+function board_members_page_field_default_field_instances() {
+  $field_instances = array();
+
+  // Exported field_instance: 'node-board_members-field_board_member_image'.
+  $field_instances['node-board_members-field_board_member_image'] = array(
+    'bundle' => 'board_members',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_board_member_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'board member images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '5 MB',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-board_members-field_name'.
+  $field_instances['node-board_members-field_name'] = array(
+    'bundle' => 'board_members',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Name of Board Member',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_name',
+    'label' => 'Name',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Image');
+  t('Name');
+  t('Name of Board Member');
+
+  return $field_instances;
+}

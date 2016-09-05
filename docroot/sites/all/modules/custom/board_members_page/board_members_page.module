@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Board Members Page feature.
+ */
+
+include_once 'board_members_page.features.inc';

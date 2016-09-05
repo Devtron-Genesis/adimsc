@@ -54,7 +54,7 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - $page['top_bar']: Items for the Top bar region.
+ * - $page['branding']: Items for the branding region.
  * - $page['header']: Items for the header region.
  * - $page['navigation']: Items for the navigation region.
  * - $page['help']: Dynamic help text, mostly for admin pages.
@@ -70,6 +70,7 @@
  * @see omega_preprocess_page()
  */
 ?>
+<div id="board-members-bg">
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding menu-area">
@@ -81,39 +82,19 @@
       <?php print render($page['top_bar']); ?>
     </div>
   </header>
-  <div class="l-main">
-    <div class="l-content" role="main">
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-    </div>
   </div>
-   <section>
-      <?php if (!empty($page['home_left'])): ?>
-      <div class="banner-area banner">
-      <?php print render($page['home_left']); ?>
+    <div class="section-cover">
+      <div id="board-members">
+          <?php if ($title): ?>
+            <h1><?php print $title; ?></h1>
+          <?php endif; ?>
+        <?php print render($page['content']); ?>
       </div>
-      <?php endif; ?>
-      <?php if (!empty($page['home_right'])): ?>
-      <div class="news-area">
-      <?php print render($page['home_right']); ?>
-      </div>
-      <?php endif; ?>
-    </section>
+    </div>
     <?php if (!empty($page['footer'])): ?>
-  <footer class="footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
-  </footer>
-  <?php endif; ?>
+      <footer class="footer" role="contentinfo">
+        <?php print render($page['footer']); ?>
+      </footer>
+    <?php endif; ?>
 </div>
+
