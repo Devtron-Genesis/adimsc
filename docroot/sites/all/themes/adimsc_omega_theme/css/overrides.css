@@ -207,7 +207,7 @@ body {
   text-align: center;
 }
 /*Board of Members CSS*/
-.section-cover{
+#board-members .section-cover{
   background: url(../images/about-chairman-img.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -283,14 +283,26 @@ body {
   color: #52befc;
   padding-top: 6px;
 }
-.page-node-5 .l-page {
-background: url(../images/about-chairman-img.png);
-background-repeat: no-repeat;
-background-position: right;
-background-attachment: fixed;
-float: left;
-width: 100%;
-min-height: 908px;
+.page-node-81 .l-page {
+  background: url(../images/about-chairman-img.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  float: left;
+  width: 100%;
+  min-height: 908px;
+}
+.page-node-81 .l-page .l-main h1{
+  display: none;
+}
+.page-node-81 .node__content .field__items p {
+  display: none;
+}
+.page-node-126 .l-page .l-main h1{
+  display: none;
+}
+.page-node-126 .node__content .field__items p {
+  display: none;
 }
 /* Media Queries */
 @media (max-width: 1400px) {
