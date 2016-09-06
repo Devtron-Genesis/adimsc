@@ -315,6 +315,18 @@ body {
 .page-node-131 #pagetitle h1{
   display: none;
 }
+.page-node-136 .l-page {
+  background: url(../images/about-chairman-img.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  float: left;
+  width: 100%;
+  min-height: 908px;
+}
+.page-node-136 #pagetitle h1{
+  display: none;
+}
 /* Media Queries */
 @media (max-width: 1400px) {
 
