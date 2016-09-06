@@ -276,7 +276,7 @@ body {
   width: 171px;
   height: 31px;
   text-align: center;
-  font-size: 100%
+  font-size: 100%;
   font-family: Calibri;
   font-style: italic;
   color: #52befc;
@@ -326,6 +326,16 @@ body {
 }
 .page-node-136 #pagetitle h1{
   display: none;
+}
+.section-all-news #widget_pager_top_all_news-page{
+  float: right;
+}
+.section-all-news .breadcrumb{
+  display: none;
+}
+.section-all-news #pagetitle{
+  padding-top: 200px;
+  padding-left: 30px;
 }
 /* Media Queries */
 @media (max-width: 1400px) {
