@@ -207,7 +207,7 @@ body {
   text-align: center;
 }
 /*Board of Members CSS*/
-#board-members .section-cover{
+.page-board-members #board-members{
   background: url(../images/about-chairman-img.png);
   background-repeat: no-repeat;
   background-position: right;
