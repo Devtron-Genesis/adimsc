@@ -1440,17 +1440,7 @@ ADIMIC CALENDAR
   padding-left: 20px;
 }
 
-.event-month ul li .event-date {
-  background: url(../images/bg-date.gif) repeat;
-  float: left;
-  width: 303px;
-  height: 57px;
-  text-align: center;
-  font-size: 21px;
-  color: #fdbb5b;
-  font-weight: 400;
-  padding-top: 20px;
-}
+
 
 .event-month ul li.active .event-month {
   background: #000;
