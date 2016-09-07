@@ -41,7 +41,7 @@ function footer_view_views_default_views() {
   $handler->display->display_options['fields']['field_country_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_country_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_country_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'footer_images',
     'image_link' => '',
   );
   /* Field: Content: Title */
