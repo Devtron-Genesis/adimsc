@@ -29,7 +29,8 @@ function footer_view_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'foot';
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -41,7 +42,7 @@ function footer_view_views_default_views() {
   $handler->display->display_options['fields']['field_country_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_country_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_country_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'footer_images',
     'image_link' => '',
   );
   /* Field: Content: Title */
@@ -51,20 +52,31 @@ function footer_view_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Updated date */
-  $handler->display->display_options['fields']['changed']['id'] = 'changed';
-  $handler->display->display_options['fields']['changed']['table'] = 'node';
-  $handler->display->display_options['fields']['changed']['field'] = 'changed';
-  $handler->display->display_options['fields']['changed']['label'] = '';
-  $handler->display->display_options['fields']['changed']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['changed']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['changed']['custom_date_format'] = 'd M';
-  $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Field: Content: Event Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['type'] = 'field_countdown_integer';
+  /* Field: Global: PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['label'] = '';
+  $handler->display->display_options['fields']['php']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_output'] = '<?php
+$datess = format_date($data->field_field_event_date[0][\'raw\'][\'countdown_timer\'],\'adimsc_footer_event\');
+print(\' - \'.$datess);
+?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+  /* Sort criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -79,6 +91,12 @@ function footer_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'events' => 'events',
   );
+  /* Filter criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['value']['value'] = 'now';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -88,7 +106,8 @@ function footer_view_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $translatables['footer'] = array(
     t('Master'),
     t('Footer'),
