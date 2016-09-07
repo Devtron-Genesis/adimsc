@@ -17,6 +17,36 @@ function news_content_type_view_views_api($module = NULL, $api = NULL) {
 function news_content_type_view_image_default_styles() {
   $styles = array();
 
+  // Exported image style: all_news_big.
+  $styles['all_news_big'] = array(
+    'label' => 'All News Big',
+    'effects' => array(
+      12 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 740,
+          'height' => 380,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: all_news_scroll.
+  $styles['all_news_scroll'] = array(
+    'label' => 'All News Scroll',
+    'effects' => array(
+      11 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 80,
+          'height' => 90,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: home_latest_news_corusal.
   $styles['home_latest_news_corusal'] = array(
     'label' => 'Home Latest News Corusal',
