@@ -123,6 +123,12 @@ print($datess);
   $handler->display->display_options['sorts']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
   $handler->display->display_options['sorts']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['sorts']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  /* Contextual filter: Content: Event Date (field_event_date) */
+  $handler->display->display_options['arguments']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['arguments']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['arguments']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['arguments']['field_event_date_countdown_timer']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_event_date_countdown_timer']['summary']['format'] = 'default_summary';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -137,6 +143,12 @@ print($datess);
   $handler->display->display_options['filters']['type']['value'] = array(
     'events' => 'events',
   );
+  /* Filter criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['value']['value'] = 'now';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -155,6 +167,7 @@ print($datess);
 <div class="event-date">
 [php_1] - [field_event_end_date]
 </div>'),
+    t('All'),
     t('Page'),
   );
   $export['adimsc_calander'] = $view;
@@ -265,11 +278,10 @@ print($datess);
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['sorts']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -284,6 +296,12 @@ print($datess);
   $handler->display->display_options['filters']['type']['value'] = array(
     'events' => 'events',
   );
+  /* Filter criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['value']['value'] = 'now';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
