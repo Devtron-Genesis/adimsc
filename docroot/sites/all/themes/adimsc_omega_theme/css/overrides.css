@@ -647,6 +647,64 @@ right: 0;
   margin: 0 auto;
   color: #C63D41;
 }
+.teams-area ul li .team-location {
+  float: left;
+  background: url(../images/bg-logo1.gif) repeat-x;
+  width: 22.4%;
+  height: 129px;
+  padding-top: 45px;
+  padding-left: 10px;
+}
+.teams-area ul li {
+  border: 1px solid #37373b;
+  margin-bottom: 12px;
+  float: left;
+  width: 100%;
+}
+.teams-area ul li .team-logo {
+  background: url(../images/bg-logo1.gif) repeat-x;
+  float: left;
+  width: 17.6%;
+  height: 129px;
+  padding-top: 0px;
+  text-align: center;
+}
+.teams-area ul li .team-logo img {
+    display: inline-block;
+    padding-top: 20px;
+  }
+.teams-area ul li .team-location {
+  float: left;
+  background: url(../images/bg-logo1.gif) repeat-x;
+  width: 23%;
+  height: 129px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+.teams-area ul li .team-location .team-flag {
+  float: left;
+  width: 62px;
+  margin-right: 11px;
+  padding-top: 8%;
+  padding-left: 5%;
+}
+
+.teams-area ul li .team-location .location-title {
+  float: left;
+  padding-left: 5%;
+}
+
+.teams-area ul li .team-location .location-title h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.teams-area ul li .team-location .location-title span {
+  font-family: Calibri;
+  font-weight: 700;
+  color: #52befc;
+}
 /* Media Queries */
 @media (max-width: 1400px) {
 
