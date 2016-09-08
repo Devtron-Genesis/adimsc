@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'CenturyGothic-BoldItalic';
-  src: url("CenturyGothic-BoldItalic.eot");
-  src: url("CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("CenturyGothic-BoldItalic.ttf") format("truetype"), url("CenturyGothic-BoldItalic.woff") format("woff"), url("CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic") format("svg");
+  src: url("CenturyGothic-Bold.eot");
+  src: url("CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("CenturyGothic-BoldItalic.ttf") format("truetype"), url("CenturyGothic-BoldItalic.woff") format("woff"), url("CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic") format("svg");
   font-style: italic;
   font-weight: bold;
 }
