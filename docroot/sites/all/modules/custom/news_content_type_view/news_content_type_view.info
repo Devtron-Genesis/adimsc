@@ -1,13 +1,14 @@
 name = News Content type & views
-description = It's a content type view of news type content Latest News Carousel All News View Page & Image Styles of News
+description = It's a content type view of news type content Latest News Carousel All News View Page & Image Styles of News Adding Dtae Filters
 core = 7.x
 package = Features
-version = 7.x-1.3
+version = 7.x-1.4
 dependencies[] = better_exposed_filters
 dependencies[] = features
 dependencies[] = image
 dependencies[] = jcarousel
 dependencies[] = owlcarousel_views
+dependencies[] = views
 dependencies[] = views_slideshow
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2

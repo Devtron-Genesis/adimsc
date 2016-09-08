@@ -51,11 +51,11 @@ function news_content_type_view_image_default_styles() {
   $styles['home_latest_news_corusal'] = array(
     'label' => 'Home Latest News Corusal',
     'effects' => array(
-      2 => array(
+      11 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 200,
-          'height' => 180,
+          'width' => 140,
+          'height' => 85,
         ),
         'weight' => 1,
       ),
