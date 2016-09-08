@@ -5,6 +5,12 @@ body {
 .menu-area {
   padding: 0;
 }
+.logo {
+  top: 0px;
+}
+.logo img {
+  height: 100px;
+}
 /*Social links Block*/
 #block-block-1 {
   border-left: 1px solid #393939;
