@@ -83,12 +83,10 @@
   </header>
   <div class="l-main">
     <div class="l-content" role="main">
-      <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <div id="pagetitle">
-        <h1><?php print $title; ?></h1>
         </div>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
