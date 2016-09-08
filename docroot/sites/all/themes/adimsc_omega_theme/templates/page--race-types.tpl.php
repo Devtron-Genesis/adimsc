@@ -96,23 +96,20 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
+   <section>
+    <div class="racers-index">
+      <div class="carousel slide " data-ride="carousel" id="racers-carousel">
+        <?php print render($page['content']); ?>
+      </div>
+    </div>
+  </section>
       <?php print $feed_icons; ?>
     </div>
   </div>
    <section>
-      <?php if (!empty($page['home_left'])): ?>
-      <div class="banner-area banner">
-      <?php print render($page['home_left']); ?>
-      </div>
-      <?php endif; ?>
-      <?php if (!empty($page['home_right'])): ?>
-      <div class="news-area">
-      <?php print render($page['home_right']); ?>
-      </div>
-      <?php endif; ?>
-    </section>
-    <?php if (!empty($page['footer'])): ?>
+  <div class="racers-index">
+    <div class="carousel slide " data-ride="carousel" id="racers-carousel">
+     <?php if (!empty($page['footer'])): ?>
   <footer class="footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
