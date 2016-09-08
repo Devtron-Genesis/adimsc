@@ -327,15 +327,77 @@ body {
 .page-node-136 #pagetitle h1{
   display: none;
 }
-.section-all-news #widget_pager_top_all_news-page{
-  float: right;
-}
+/*All New Page CSS*/
 .section-all-news .breadcrumb{
   display: none;
 }
 .section-all-news #pagetitle{
   padding-top: 200px;
   padding-left: 30px;
+}
+.section-all-news #widget_pager_bottom_all_news-page {
+  background: transparent;
+  border: none;
+  position: absolute;
+  float: right;
+  width: 36%;
+  height: 600px;
+  padding: 0px;
+}
+.section-all-news #widget_pager_bottom_all_news-page .views_slideshow_jcarousel_pager_item{
+  background: #222122;
+  border: none;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.section-all-news #widget_pager_bottom_all_news-page ul li.active{
+  background: #5A5759;
+}
+.section-all-news .jcarousel-clip-vertical{
+  float: left;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.section-all-news ul .jcarousel-list-vertical{
+   margin-right: 20px;
+  }
+.section-all-news #widget_pager_bottom_all_news-page .views-field-created{
+  float: left;
+  color: #52befc;
+  font-size: 14px;
+  font-family: Calibri;
+}
+.section-all-news #widget_pager_bottom_all_news-page .views-field-title{
+  color: #c7d0d9;
+  font-weight: bold;
+  font-family: "CenturyGothic-Bold";
+  font-size: 13px;
+  line-height: 1.1;
+  margin-top: 10px;
+  width: 50%;
+}
+.section-all-news .views-field-field-news-image .views-content-field-news-image img{
+  float: right;
+}
+.section-all-news #views_slideshow_cycle_main_all_news-page .views-field-field-news-image img{
+  width: 90%;
+}
+.jcarousel-item-vertical{
+  background: green;
+}
+.section-all-news #views_slideshow_cycle_teaser_section_all_news-page{
+  top: 0px;
+  float: left;
+}
+.section-all-news #views_slideshow_cycle_teaser_section_all_news-page{
+  margin-left: 50px;
+  width: 60%;
+}
+.section-all-news .skin-default{
+  width: 100%;
 }
 /*
 ==========================================================
@@ -485,7 +547,6 @@ right: 0;
   right: 0;
   margin: 0 auto;
   color: #C63D41;
-
 }
 /* Media Queries */
 @media (max-width: 1400px) {
