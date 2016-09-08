@@ -5,5 +5,6 @@
     $('.sf-main-menu ul').addClass('menu-dropdown').attr('style', 'margin-top: -4px');
     $('.owl-next').append('<i aria-hidden="true" class="fa fa-angle-right"></i>');
     $('.owl-prev').append('<i aria-hidden="true" class="fa fa-angle-left"></i>');
+    $('.views-content-title, .views-field-created').wrap('<div class="wrap-me">');
   });
 })(jQuery);
