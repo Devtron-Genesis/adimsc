@@ -193,7 +193,7 @@ print($datess);
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Country Image */
+  /* Field: Content: Country Flag Image */
   $handler->display->display_options['fields']['field_country_image']['id'] = 'field_country_image';
   $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
   $handler->display->display_options['fields']['field_country_image']['field'] = 'field_country_image';
@@ -338,6 +338,165 @@ print($datess);
     t('Block'),
   );
   $export['home_upcoming_event_conter'] = $view;
+
+  $view = new view();
+  $view->name = 'team_calender';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Team Calender';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Team Calender';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_select_race_type_target_id']['id'] = 'field_select_race_type_target_id';
+  $handler->display->display_options['relationships']['field_select_race_type_target_id']['table'] = 'field_data_field_select_race_type';
+  $handler->display->display_options['relationships']['field_select_race_type_target_id']['field'] = 'field_select_race_type_target_id';
+  /* Field: Content: Race Type Logo */
+  $handler->display->display_options['fields']['field_race_type_logo']['id'] = 'field_race_type_logo';
+  $handler->display->display_options['fields']['field_race_type_logo']['table'] = 'field_data_field_race_type_logo';
+  $handler->display->display_options['fields']['field_race_type_logo']['field'] = 'field_race_type_logo';
+  $handler->display->display_options['fields']['field_race_type_logo']['relationship'] = 'field_select_race_type_target_id';
+  $handler->display->display_options['fields']['field_race_type_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_race_type_logo']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_race_type_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_race_type_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_race_type_logo']['settings'] = array(
+    'image_style' => 'race_types_logo_style',
+    'image_link' => '',
+  );
+  /* Field: Content: Event Country Location Image */
+  $handler->display->display_options['fields']['field_country_location_image']['id'] = 'field_country_location_image';
+  $handler->display->display_options['fields']['field_country_location_image']['table'] = 'field_data_field_country_location_image';
+  $handler->display->display_options['fields']['field_country_location_image']['field'] = 'field_country_location_image';
+  $handler->display->display_options['fields']['field_country_location_image']['label'] = '';
+  $handler->display->display_options['fields']['field_country_location_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_country_location_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_country_location_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_country_location_image']['settings'] = array(
+    'image_style' => 'event_country_location_image',
+    'image_link' => '',
+  );
+  /* Field: Content: Country Flag Image */
+  $handler->display->display_options['fields']['field_country_image']['id'] = 'field_country_image';
+  $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
+  $handler->display->display_options['fields']['field_country_image']['field'] = 'field_country_image';
+  $handler->display->display_options['fields']['field_country_image']['label'] = '';
+  $handler->display->display_options['fields']['field_country_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_country_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_country_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_country_image']['settings'] = array(
+    'image_style' => 'race_types_country_flag__style',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Event Date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['type'] = 'field_countdown_plain';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '  <div class="team-logo">
+                [field_race_type_logo]
+              </div>
+              <div class="team-country-img">
+                [field_country_location_image]
+              </div>
+              <div class="team-location">
+                <div class="team-flag">
+                  [field_country_image]
+                </div>
+                <div class="location-title">
+                  <h4>[title]</h4><span>Date: [field_event_date]</span>
+                </div>
+              </div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'events' => 'events',
+  );
+  /* Filter criterion: Content: Event Date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['id'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['field'] = 'field_event_date_countdown_timer';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_date_countdown_timer']['value']['value'] = 'now';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'team-calender';
+  $translatables['team_calender'] = array(
+    t('Master'),
+    t('Team Calender'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Content entity referenced from field_select_race_type'),
+    t('  <div class="team-logo">
+                [field_race_type_logo]
+              </div>
+              <div class="team-country-img">
+                [field_country_location_image]
+              </div>
+              <div class="team-location">
+                <div class="team-flag">
+                  [field_country_image]
+                </div>
+                <div class="location-title">
+                  <h4>[title]</h4><span>Date: [field_event_date]</span>
+                </div>
+              </div>'),
+    t('Page'),
+  );
+  $export['team_calender'] = $view;
 
   return $export;
 }

@@ -80,7 +80,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     ),
     'entity_type' => 'node',
     'field_name' => 'field_country_image',
-    'label' => 'Country Image',
+    'label' => 'Country Flag Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -102,6 +102,56 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
       ),
       'type' => 'image_image',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-events-field_country_location_image'.
+  $field_instances['node-events-field_country_location_image'] = array(
+    'bundle' => 'events',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_country_location_image',
+    'label' => 'Event Country Location Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 146,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'event_country_location_image',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 8,
     ),
   );
 
@@ -283,14 +333,59 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     ),
   );
 
+  // Exported field_instance: 'node-events-field_select_race_type'.
+  $field_instances['node-events-field_select_race_type'] = array(
+    'bundle' => 'events',
+    'default_value' => array(
+      0 => array(
+        'target_id' => 140,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_select_race_type',
+    'label' => 'Select Race Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('Country Image');
+  t('Country Flag Image');
   t('Event City');
   t('Event Country');
+  t('Event Country Location Image');
   t('Event Date');
   t('Event Detail');
   t('Event end date');
+  t('Select Race Type');
 
   return $field_instances;
 }
