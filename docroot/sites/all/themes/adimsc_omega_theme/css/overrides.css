@@ -201,6 +201,9 @@ body {
   font-size: 30px;
   text-align: center;
 }
+.fa-angle-left:hover , .fa-angle-right:hover{
+  color: #C63D41;
+}
 /*Video Section*/
 /*Upcoming Event*/
 .time-block{
