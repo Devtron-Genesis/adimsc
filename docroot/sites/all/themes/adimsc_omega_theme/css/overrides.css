@@ -50,6 +50,9 @@
 #block-superfish-1 {
   float: right;
 }
+#block-superfish-1 .sf-depth-2 .active{
+  padding: 10px 0px;
+}
 .main-menu {
   margin-top: 0;
   border-right: 0;
