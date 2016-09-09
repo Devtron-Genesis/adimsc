@@ -138,8 +138,9 @@ body {
   bottom: -20px;
   right: 0;
 }
-.latest-news .owl-controls.clickable {
+.view-latest-news .owl-controls.clickable {
   height: 0px;
+  float: left;
 }
 .news-area .block__title{
   margin-bottom: 15px;
@@ -198,6 +199,9 @@ body {
 .fa-angle-left , .fa-angle-right{
   font-size: 30px;
   text-align: center;
+}
+.fa-angle-left:hover , .fa-angle-right:hover{
+  color: #C63D41;
 }
 /*Video Section*/
 /*Upcoming Event*/
