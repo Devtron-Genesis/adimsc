@@ -138,6 +138,10 @@ body {
   bottom: -20px;
   right: 0;
 }
+.latest-news .owl-controls.clickable {
+  height: 0px;
+  float: left;
+}
 .news-area .block__title{
   margin-bottom: 15px;
   font-size: 24px;
