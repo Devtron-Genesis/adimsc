@@ -60,9 +60,11 @@
   <?php print $scripts; ?>
 </head>
 <body<?php print $attributes;?>>
-  <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+  <div class="page-wrapper">
+    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+    <?php print $page_top; ?>
+    <?php print $page; ?>
+    <?php print $page_bottom; ?>
+  </div>
 </body>
 </html>
