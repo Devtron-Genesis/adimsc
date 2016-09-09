@@ -31,10 +31,10 @@ function footer_view_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '7';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'foot';
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_footer-view';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Country Image */
+  /* Field: Content: Country Flag Image */
   $handler->display->display_options['fields']['field_country_image']['id'] = 'field_country_image';
   $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
   $handler->display->display_options['fields']['field_country_image']['field'] = 'field_country_image';
