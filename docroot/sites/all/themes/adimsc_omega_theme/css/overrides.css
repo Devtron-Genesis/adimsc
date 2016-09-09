@@ -513,9 +513,72 @@ body {
   font-family: 'CenturyGothic-Bold';
   color: #52befc;
 }
-/*Events Calender*/
-.event
+.events-calander {
+  float: left;
+  max-width: 950px;
+  height: 565px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.event-month {
+  float: left;
+  position: relative;
+  padding-left: 46px;
+}
+.event-month tr {
+  float: left;
+  border-left: 2px solid #d77627;
+}
+.event-month h3 {
+  background: url(../images/bg-month.png) no-repeat center;
+  position: absolute;
+  left: 0;
+  float: left;
+  width: 46px;
+  height: 31px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3px;
+}
+.event-month tr td {
+  float: left;
+  width: 100%;
+}
+.event-month tr td .event-location {
+  background: url(../images/bg-date.gif) repeat;
+  float: left;
+  width: 554px;
+  height: 57px;
+  margin-right: 7px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.event-month tr td .event-date {
+  background: url(../images/bg-date.gif) repeat;
+  float: left;
+  width: 303px;
+  height: 57px;
+  text-align: center;
+  font-size: 21px;
+  color: #fdbb5b;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.event-month tr td .active .event-month {
+  background: #000;
+}
+.event-month tr td .active .event-date {
+  background: #000;
+}
 
+/*Events Calender*/
 /*Race and Drivers*/
 .racers-index .owl-prev {
   position: absolute;
