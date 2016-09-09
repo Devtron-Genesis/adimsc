@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+section {
+  margin-bottom: 48px;
+  float: left;
+  width: 100%;
+}
 /*.not-front .l-main {
   float: left;
   padding-top: 40px;
@@ -265,7 +270,9 @@
   background: #292929;
   float: left;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 8px;
+  position: absolute;
+  bottom: 0;
 }
 .footer .field-content{
   float: left;
