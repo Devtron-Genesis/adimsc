@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Latest News Carousel feature.
- */
-
-include_once 'latest_news_carousel.features.inc';
