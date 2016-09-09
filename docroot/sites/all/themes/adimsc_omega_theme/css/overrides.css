@@ -125,13 +125,26 @@ body {
   right: 0px;
   z-index: none;
 }
-.news-bio h3 {
+/*.news-bio h3 {
   color: #52BEFC;
   font-size: 16px;
   margin-bottom: 3px;
   float: left;
+}*/
+.latest-news {
+  background: url(../images/line-seprator.png) no-repeat left bottom;
+  float: left;
+  width: 85%;
 }
-/*.news-area .block__title{
+.latest-news .btn-default{
+  float: left;
+  padding-top: 15px;
+  position: absolute;
+  text-align: center;
+  bottom: -20px;
+  right: 0;
+}
+.news-area .block__title{
   margin-bottom: 15px;
   font-size: 24px;
   font-family: CenturyGothic;
@@ -190,7 +203,7 @@ body {
 .fa-angle-left , .fa-angle-right{
   font-size: 30px;
   text-align: center;
-}*/
+}
 /*Video Section*/
 /*Upcoming Event*/
 .time-block{
