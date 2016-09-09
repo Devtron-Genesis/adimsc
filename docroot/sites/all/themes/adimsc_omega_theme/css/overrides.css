@@ -140,6 +140,7 @@ body {
 }
 .latest-news .owl-controls.clickable {
   height: 0px;
+  float: left;
 }
 .news-area .block__title{
   margin-bottom: 15px;
