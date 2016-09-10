@@ -24,9 +24,15 @@
           // $(this).siblings().hide();
           $.session.remove('thumbs');
           // $(this).delegate('click');
+          // $.session.remove('thumbs');
         }
       });
     }
-    // $.session.remove('thumbs');
+
+    $('#block-views-cea8a95ddf9c6643ab310ee465277b95 div[id^="field-countdown-timer-note"]').remove();
+    $('#block-views-cea8a95ddf9c6643ab310ee465277b95 .countDays').append('<span class="counter-text count-days">Days</span>');
+    $('#block-views-cea8a95ddf9c6643ab310ee465277b95 .countHours').append('<span class="counter-text count-hours">Hours</span>');
+    $('#block-views-cea8a95ddf9c6643ab310ee465277b95 .countMinutes').append('<span class="counter-text count-minutes">Minutes</span>');
+    $('#block-views-cea8a95ddf9c6643ab310ee465277b95 .countSeconds').append('<span class="counter-text count-seconds`">Seconds</span>');
   });
 })(jQuery);

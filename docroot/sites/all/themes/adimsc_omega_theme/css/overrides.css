@@ -7,11 +7,6 @@ section {
   float: left;
   width: 100%;
 }
-/*.not-front .l-main {
-  float: left;
-  padding-top: 40px;
-  padding-left: 100px;
-}*/
 /*Main Menu*/
 .menu-area {
   padding: 0;
@@ -151,6 +146,9 @@ section {
   height: 0px;
   float: left;
 }
+.view-latest-news .owl-theme .owl-controls .owl-buttons div {
+  padding: 4px 10px;
+}
 .news-area .block__title{
   margin-bottom: 15px;
   font-size: 24px;
@@ -216,21 +214,74 @@ section {
   color: #C63D41;
 }
 /*Video Section*/
-/*Upcoming Event*/
-.time-block{
-  width: 110%;
-  margin-top: -11%;
-}
-.time-block span {
-  position: relative;
-  font-family: 'CenturyGothic';
+#block-views-youtube-home-vedio-block {
   float: left;
-  font-size: 10px;
-  margin-left: 00px;
-  margin-right: 0px;
-  margin-top: -1%;
-  padding-bottom: 2%;
-  padding-left: 34px;
+  width: 100%;
+}
+#block-views-youtube-home-vedio-block .field-content {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#block-views-youtube-home-vedio-block .field-content {
+  float: none;
+  margin: 0 auto;
+}
+/*Upcoming Event*/
+#block-views-cea8a95ddf9c6643ab310ee465277b95 {
+  float: left;
+  width: 100%;
+  font-family: 'CenturyGothic';
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder {
+  float: left;
+  width: 100%!important;
+  margin-left: 0px!important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0px;
+  line-height: 22px;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .video-description {
+  width: 95%;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .field-content {
+  float: left;
+  width: 100%;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 h2 {
+  margin-top: 0px;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder > span {
+  width: 20%;
+  float: left;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder .countDiv {
+  width: 5%;
+  float: left;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder .countDiv:before {
+  top: 16px;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder .countDiv:after {
+  top: 0px;
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .position {
+  display: inline-block!important;
+  height: 1.6em!important;
+  overflow: hidden!important;
+  position: relative!important;
+  /*width: 1.05em!important;*/
+}
+#block-views-cea8a95ddf9c6643ab310ee465277b95 .counter-text {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
 }
 /*Board of Members CSS*/
 .page-board-members .page-wrapper{

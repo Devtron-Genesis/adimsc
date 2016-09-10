@@ -47,6 +47,7 @@ function home_youtube_video_content__field_default_field_instances() {
     'label' => 'Youtube Video link ',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
