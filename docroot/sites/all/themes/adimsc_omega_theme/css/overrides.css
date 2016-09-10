@@ -230,8 +230,7 @@ section {
 /*Upcoming Event*/
 #block-views-cea8a95ddf9c6643ab310ee465277b95 {
   float: left;
-  margin-left: 3%;
-  width: 94%;
+  width: 100%;
   font-family: 'CenturyGothic';
 }
 #block-views-cea8a95ddf9c6643ab310ee465277b95 .countdownHolder {
