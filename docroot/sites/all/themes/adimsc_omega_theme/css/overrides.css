@@ -272,10 +272,9 @@
 }
 .footer .field-content{
   float: left;
-  width: auto;
 }
 .footer img{
-  margin-right: 20%;
+  margin-right: 5px;
 }
 /*See all button*/
 .btn-default {
