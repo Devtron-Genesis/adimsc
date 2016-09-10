@@ -35,6 +35,12 @@ function footer_view_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
   $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_footer-view';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_country_image' => 'field_country_image',
+    'title' => 'title',
+    'field_event_date' => 'field_event_date',
+    'php' => 'php',
+  );
   /* Field: Content: Country Flag Image */
   $handler->display->display_options['fields']['field_country_image']['id'] = 'field_country_image';
   $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
@@ -51,6 +57,8 @@ function footer_view_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '22';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Event Date */
@@ -106,8 +114,7 @@ print(\' - \'.$datess);
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $translatables['footer'] = array(
     t('Master'),

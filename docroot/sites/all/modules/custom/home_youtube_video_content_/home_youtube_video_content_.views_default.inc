@@ -40,11 +40,11 @@ function home_youtube_video_content__views_default_views() {
   $handler->display->display_options['fields']['field_youtube_video_link_']['click_sort_column'] = 'input';
   $handler->display->display_options['fields']['field_youtube_video_link_']['settings'] = array(
     'youtube_size' => 'custom',
-    'youtube_width' => '591',
+    'youtube_width' => '535',
     'youtube_height' => '300',
     'youtube_autoplay' => 0,
     'youtube_loop' => 0,
-    'youtube_showinfo' => 0,
+    'youtube_showinfo' => 1,
     'youtube_controls' => 0,
     'youtube_autohide' => 0,
     'youtube_iv_load_policy' => 0,

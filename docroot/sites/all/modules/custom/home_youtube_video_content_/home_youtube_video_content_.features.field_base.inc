@@ -24,7 +24,9 @@ function home_youtube_video_content__field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'youtube',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'youtube',
   );
