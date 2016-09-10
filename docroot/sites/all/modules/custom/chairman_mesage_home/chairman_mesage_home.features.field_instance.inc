@@ -40,6 +40,7 @@ function chairman_mesage_home_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -70,6 +71,47 @@ function chairman_mesage_home_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-chairman_message-field_chairman_message'.
+  $field_instances['node-chairman_message-field_chairman_message'] = array(
+    'bundle' => 'chairman_message',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_chairman_message',
+    'label' => 'Chairman Message',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -2,
+    ),
+  );
+
   // Exported field_instance: 'node-chairman_message-field_chairman_name'.
   $field_instances['node-chairman_message-field_chairman_name'] = array(
     'bundle' => 'chairman_message',
@@ -96,6 +138,7 @@ function chairman_mesage_home_field_default_field_instances() {
     'label' => 'Chairman Name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -138,6 +181,7 @@ function chairman_mesage_home_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),

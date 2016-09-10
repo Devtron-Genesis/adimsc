@@ -119,6 +119,26 @@ function home_mian_slider_content_type_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $translatables['home_slider_view'] = array(
+    t('Master'),
+    t('Home slider view'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('image from field_home_slider_images'),
+    t('Page'),
+    t('Block'),
+  );
   $export['home_slider_view'] = $view;
 
   return $export;
