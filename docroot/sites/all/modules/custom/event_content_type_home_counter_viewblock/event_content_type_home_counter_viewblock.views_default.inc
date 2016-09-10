@@ -193,6 +193,14 @@ print($datess);
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Country Flag Image */
   $handler->display->display_options['fields']['field_country_image']['id'] = 'field_country_image';
   $handler->display->display_options['fields']['field_country_image']['table'] = 'field_data_field_country_image';
@@ -261,20 +269,16 @@ print($datess);
       [field_country_image]
     </div>
     <div class="video-title">
-      <h2>[field_events_country]<br>
-      [field_event_city]</h2>
+      <h2>[field_events_country] - [field_event_city]<br>
+      [title]</h2>
       <div class="date">
-        <i aria-hidden="true" class="fa fa-calendar-check-o"></i>
-        <span>[field_event_date_1]</span>
+<i aria-hidden="true" class="fa fa-calendar-check-o"></i>
+         <span>[field_event_date_1]</span>
       </div>
     </div>
   </div>
   <div class="video-timer">
     [field_event_date]
-    <div class="time-block">
-      <span>Days</span> <span>hours</span> <span>Minutes</span>
-      <span>secounds</span>
-    </div>
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -304,7 +308,7 @@ print($datess);
   $handler->display->display_options['filters']['field_event_date_countdown_timer']['value']['value'] = 'now';
 
   /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  $handler = $view->new_display('block', 'Block', 'home_upcoming_events');
   $translatables['home_upcoming_event_conter'] = array(
     t('Master'),
     t('more'),
@@ -319,20 +323,16 @@ print($datess);
       [field_country_image]
     </div>
     <div class="video-title">
-      <h2>[field_events_country]<br>
-      [field_event_city]</h2>
+      <h2>[field_events_country] - [field_event_city]<br>
+      [title]</h2>
       <div class="date">
-        <i aria-hidden="true" class="fa fa-calendar-check-o"></i>
-        <span>[field_event_date_1]</span>
+<i aria-hidden="true" class="fa fa-calendar-check-o"></i>
+         <span>[field_event_date_1]</span>
       </div>
     </div>
   </div>
   <div class="video-timer">
     [field_event_date]
-    <div class="time-block">
-      <span>Days</span> <span>hours</span> <span>Minutes</span>
-      <span>secounds</span>
-    </div>
   </div>
 </div>'),
     t('Block'),

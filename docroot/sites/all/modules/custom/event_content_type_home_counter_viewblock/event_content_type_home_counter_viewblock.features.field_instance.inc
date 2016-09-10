@@ -40,6 +40,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -85,6 +86,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -134,7 +136,8 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 146,
+      'default_image' => 216,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -181,6 +184,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'label' => 'Event City',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -225,6 +229,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'label' => 'Event Date',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -254,6 +259,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
           'multiple_number' => '',
           'multiple_to' => '',
           'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 6,
@@ -274,17 +280,20 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'date',
       'settings' => array(
+        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -319,6 +328,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'label' => 'Event Country',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -365,6 +375,7 @@ function event_content_type_home_counter_viewblock_field_default_field_instances
     'label' => 'Select Race Type',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
