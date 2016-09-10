@@ -383,7 +383,7 @@ section {
   margin-right: 20px;
 }
 .section-all-news .views-content-title{
-  margin-bottom: 45px;
+
 }
 .section-all-news #widget_pager_bottom_all_news-page .views-field-created{
   color: #52befc;
@@ -410,6 +410,7 @@ section {
 }
 .section-all-news .wrap-me{
   float: left;
+  margin-top: 5%;
   width: 70%;
 }
 .section-all-news #widget_pager_bottom_all_news-page .views-field-field-news-image .views-content-field-news-image{
