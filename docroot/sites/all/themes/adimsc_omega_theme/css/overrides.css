@@ -7,11 +7,6 @@ section {
   float: left;
   width: 100%;
 }
-/*.not-front .l-main {
-  float: left;
-  padding-top: 40px;
-  padding-left: 100px;
-}*/
 /*Main Menu*/
 .menu-area {
   padding: 0;
@@ -151,6 +146,9 @@ section {
   height: 0px;
   float: left;
 }
+.view-latest-news .owl-theme .owl-controls .owl-buttons div {
+  padding: 4px 10px;
+}
 .news-area .block__title{
   margin-bottom: 15px;
   font-size: 24px;
@@ -216,6 +214,19 @@ section {
   color: #C63D41;
 }
 /*Video Section*/
+#block-views-youtube-home-vedio-block {
+  float: left;
+  width: 100%;
+}
+#block-views-youtube-home-vedio-block .field-content {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#block-views-youtube-home-vedio-block .field-content {
+  float: none;
+  margin: 0 auto;
+}
 /*Upcoming Event*/
 .time-block{
   width: 110%;
