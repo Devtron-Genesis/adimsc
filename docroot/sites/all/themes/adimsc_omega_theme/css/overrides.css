@@ -395,7 +395,7 @@ section {
 .page-node-136 #pagetitle h1{
   display: none;
 }
-/*All New Page CSS*/
+/*All News Page CSS*/
 .section-all-news .breadcrumb{
   display: none;
 }
@@ -816,6 +816,94 @@ section {
 .jcarousel-skin-ie7 .jcarousel-clip-horizontal .views-field-title {
   float: left !important;
 }
+/*Webform CSS*/
+.page-node-196 .node__submitted {
+  display: none;
+}
+.page-node-196 #pagetitle {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.page-node-196 .webform-client-form-192 {
+  float: left;
+  padding-top: 5%;
+  padding-left: 10%;
+  width: 80%;
+}
+.page-node-196  input:not([type]), input[type="text"], input[type="email"] {
+  background: #494347;
+  opacity: 0.7;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 1% 0% 2% 3%;
+}
+.page-node-196 ::-webkit-input-placeholder {
+  color: #fff;
+}
+.page-node-196 .full-group{
+  width: 100%;
+  float: left;
+}
+.page-node-196 .left-group{
+  width: 30%;
+  float: left;
+}
+.page-node-196 .right-group{
+  width: 70%;
+  float: left;
+}
+.page-node-196 .right-group-1st{
+  width: 60%;
+  float: left;
+  border: solid 1px #565656;
+  padding: 5px;
+  margin-right: 5px;
+}
+.page-node-196 .right-group-1st label[for="edit-submitted-race-category"] ,
+.page-node-196 .right-group-2nd label[for="edit-submitted-mainufacturer"] {
+  margin-bottom: 20px;
+  color: #6b9ff6;
+}
+.page-node-196  .form-required{
+  display: none;
+}
+.page-node-196 .right-group-2nd{
+  width: 30%;
+  float: left;
+  border: solid 1px #565656;
+  padding: 5px;
+}
+.page-node-196 .office{
+  float: left;
+  width: 60%;
+  border: solid 1px #565656;
+}
+.page-node-196 .of-use-ch{
+  color: #6b9ff6;
+}
+.page-node-196 .off-use-tittle{
+  color: #6b9ff6;
+  font-size: 20px;
+  font-weight: bold;
+}
+.page-node-196 .right-group-1st .form-checkboxes .form-item{
+  float: left;
+  width: 50%;
+}
+/*.page-node-196 .race-cat{
+  float: left;
+  width: 20%
+}
+.page-node-196 .manufac{
+  float: left;
+  width: 20%;
+}*/
+/*.page-node-196 .left-field-groups{
+  float: left;
+  background: red;
+  margin-right: 10%;
+}*/
 /* Media Queries */
 @media (max-width: 1400px) {
 

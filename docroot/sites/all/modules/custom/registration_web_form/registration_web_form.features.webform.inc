@@ -409,7 +409,8 @@ $webforms = array();
 3| Expert Runabout Stock\\Pro Ski GP
 4| Ski Junior Stock
 5| Pro Runabout GP
-6| Free Style',
+6| Free Style
+7| Pro Ski GP',
           'multiple' => 1,
           'title_display' => 'before',
           'description_above' => 0,
@@ -461,6 +462,28 @@ $webforms = array();
         'required' => 1,
         'weight' => 11,
         'machine_name' => 'registration_form__mainufacturer',
+        'page_num' => 1,
+      ),
+      'registration_form__for_office_use_only' => array(
+        'form_key' => 'for_office_use_only',
+        'name' => 'For Office Use Only',
+        'type' => 'markup',
+        'value' => '<div class="office-use">
+  <div class="off-use-tittle">For Office Use Only</div>
+  <div class="">penalty for Late Registration (after <span class="of-use-ch"> 2 days </span> ) Dhs. 500</div>
+  <div class="">Penalty for any late changm in registration (after <span class="of-use-ch"> 2 </span> days ) Dhs. 1000</div>
+  <div class="">Penalty for Non-compliance-to any of the Race Instructions, Rules and/or Regulatons Dhs. 500</div>
+  <div class="">REGISTRATION DEADLINE: <span class="of-use-ch"> 29 sep 2016 </span> </div>
+</div>
+',
+        'extra' => array(
+          'format' => 'full_html',
+          'private' => 0,
+          'display_on' => 'form',
+        ),
+        'required' => 0,
+        'weight' => 12,
+        'machine_name' => 'registration_form__for_office_use_only',
         'page_num' => 1,
       ),
     ),

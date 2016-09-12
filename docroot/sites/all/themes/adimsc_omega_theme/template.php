@@ -11,9 +11,15 @@
  * for more information on this topic.
  */
 function adimsc_omega_theme_preprocess_node(&$vars) {
+
 $vars['members'] = views_embed_view('team_member', 'team_members', $vars['nid']);
 $vars['gallery'] = views_embed_view('image_gallery', 'image_gallery', $vars['nid']);
 $vars['v_gallery'] = views_embed_view('vedio_gallery', 'vedio_gallery_block', $vars['nid']);
-// dsm($vars);
-  // dsm($addblock);
+$vars['members'] = views_embed_view('team_member', 'team_members', $vars['nid']);
+$vars['webform'] = views_embed_view('View_name', 'block_name', $vars['nid']);
+
 }
+
+
+
+
