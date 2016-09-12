@@ -15,5 +15,5 @@ function adimsc_omega_theme_preprocess_node(&$vars) {
 }
 
 function adimsc_omega_theme_preprocess_webform_form(&$vars) {
-  dsm($vars);
+ $vars['webform'] = views_embed_view('View_name', 'block_name', $vars['nid']);
 }

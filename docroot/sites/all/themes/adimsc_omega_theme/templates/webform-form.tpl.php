@@ -34,18 +34,33 @@
   // Print out the main part of the form.
   // Feel free to break this up and move the pieces within the array.
   hide($form['submitted']);
-  print '<div class="left-group">';
-  print drupal_render($form['submitted']['name']);
-  print drupal_render($form['submitted']['license_no']);
-  print drupal_render($form['submitted']['affiliated_club_na']);
-  print drupal_render($form['submitted']['mobile_tel']);
-  print drupal_render($form['submitted']['email']);
-  print drupal_render($form['submitted']['nationality']);
-  print drupal_render($form['submitted']['for_emergency_name']);
-  print drupal_render($form['submitted']['date_of_birth']);
-  print drupal_render($form['submitted']['blood_group']);
-  print drupal_render($form['submitted']['  mobile_no']);
+  print '<div class="full-group">';
+    print '<div class="left-group">';
+      print drupal_render($form['submitted']['name']);
+      print drupal_render($form['submitted']['license_no']);
+      print drupal_render($form['submitted']['affiliated_club_na']);
+      print drupal_render($form['submitted']['mobile_tel']);
+      print drupal_render($form['submitted']['email']);
+      print drupal_render($form['submitted']['nationality']);
+      print drupal_render($form['submitted']['for_emergency_name']);
+      print drupal_render($form['submitted']['date_of_birth']);
+      print drupal_render($form['submitted']['blood_group']);
+      print drupal_render($form['submitted']['mobile_no']);
+    print '</div>';
+    print '<div class="right-group">';
+      print '<div class="right-group-1st">';
+        print drupal_render($form['submitted']['race_category']);
+      print '</div>';
+      print '<div class="right-group-2nd">';
+        print drupal_render($form['submitted']['mainufacturer']);
+      print '</div>';
+    print '</div>';
+    print '<div class="office">';
+      print drupal_render($form['submitted']['for_office_use_only']);
+    print '</div>';
   print '</div>';
+
+
   // Always print out the entire $form. This renders the remaining pieces of the
   // form that haven't yet been rendered above (buttons, hidden elements, etc).
   print drupal_render_children($form);
