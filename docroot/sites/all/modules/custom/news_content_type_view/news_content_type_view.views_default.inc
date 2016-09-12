@@ -95,6 +95,7 @@ function news_content_type_view_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_jcarousel_pager';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
+    'nid' => 0,
     'field_news_image' => 0,
     'title' => 0,
     'field_news_detail' => 0,
@@ -105,6 +106,7 @@ function news_content_type_view_views_default_views() {
     'title' => 'title',
     'created' => 'created',
     'field_news_image_1' => 'field_news_image_1',
+    'nid' => 0,
     'field_news_image' => 0,
     'field_news_detail' => 0,
   );
@@ -125,11 +127,13 @@ function news_content_type_view_views_default_views() {
     'title' => 'title',
     'created' => 'created',
     'field_news_image_1' => 'field_news_image_1',
+    'nid' => 0,
     'field_news_image' => 0,
     'field_news_detail' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_hover'] = 1;
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_jcarousel_pager_fields'] = array(
+    'nid' => 'nid',
     'title' => 'title',
     'created' => 'created',
     'field_news_image_1' => 'field_news_image_1',
@@ -157,6 +161,13 @@ function news_content_type_view_views_default_views() {
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartype'] = 0;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartypenobg'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: News Image */
   $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
   $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
@@ -176,6 +187,7 @@ function news_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'thumnail-item-[nid]';
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: News Detail */
   $handler->display->display_options['fields']['field_news_detail']['id'] = 'field_news_detail';
@@ -406,12 +418,19 @@ function news_content_type_view_views_default_views() {
     'changed_1' => 'changed_1',
     'field_news_detail' => 'field_news_detail',
   );
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<div class="latest-news">
+<a href="all-news" class="btn-default">Click here to see All News</a>
+ </div>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: News Image */
   $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
@@ -423,9 +442,10 @@ function news_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['field_news_image']['alter']['link_class'] = 'all-news/#[nid]';
   $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_image']['type'] = 'owlcarousel_formatter';
   $handler->display->display_options['fields']['field_news_image']['settings'] = array(
+    'settings_group' => 'owlcarousel_settings_latest-news-carousel',
     'image_style' => 'home_latest_news_corusal',
-    'image_link' => '',
   );
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
@@ -490,6 +510,9 @@ function news_content_type_view_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<div class="latest-news">
+<a href="all-news" class="btn-default">Click here to see All News</a>
+ </div>'),
     t('Page'),
     t('Block'),
   );
