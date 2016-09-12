@@ -763,6 +763,43 @@ section {
   font-weight: 700;
   color: #52befc;
 }
+/*Webform CSS*/
+.page-node-192 .node__submitted {
+  display: none;
+}
+.page-node-192 #pagetitle {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.page-node-192 .webform-client-form-192 {
+  float: left;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.page-node-192  input:not([type]), input[type="text"], input[type="email"] {
+  background: #494347;
+  opacity: 0.7;
+  border: none;
+  color: #fff;
+  padding: 3% 0% 5% 5%;
+}
+.page-node-192 ::-webkit-input-placeholder {
+  color: #fff;
+}
+.page-node-192 .race-cat{
+  float: left;
+ /* width: 20%*/
+}
+.page-node-192 .manufac{
+  float: left;
+ /* width: 20%;*/
+}
+/*.page-node-192 .left-field-groups{
+  float: left;
+  background: red;
+  margin-right: 10%;
+}*/
+
 /* Media Queries */
 @media (max-width: 1400px) {
 

@@ -11,7 +11,9 @@
  * for more information on this topic.
  */
 function adimsc_omega_theme_preprocess_node(&$vars) {
-$vars['members'] = views_embed_view('team_member', 'team_members', $vars['nid']);
-// dsm($vars);
-  // dsm($addblock);
+  $vars['members'] = views_embed_view('team_member', 'team_members', $vars['nid']);
+}
+
+function adimsc_omega_theme_preprocess_webform_form(&$vars) {
+  dsm($vars);
 }
