@@ -27,7 +27,7 @@
 }
 
 .jcarousel-skin-default .jcarousel-clip-horizontal {
-  width: 100%;
+  width: 440px;
   overflow: hidden;
 }
 
