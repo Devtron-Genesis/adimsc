@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Add Vedio feature.
+ */
+
+include_once 'add_vedio.features.inc';
