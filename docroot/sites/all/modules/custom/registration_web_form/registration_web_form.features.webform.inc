@@ -406,7 +406,7 @@ $webforms = array();
         'extra' => array(
           'items' => '1| Novice Runabout Stock
 2| Expert Ski Limited
-3| Expert Runabout Stock\\Pro Ski GP
+3| Expert Runabout Stock
 4| Ski Junior Stock
 5| Pro Runabout GP
 6| Free Style
@@ -474,6 +474,16 @@ $webforms = array();
   <div class="">Penalty for any late changm in registration (after <span class="of-use-ch"> 2 </span> days ) Dhs. 1000</div>
   <div class="">Penalty for Non-compliance-to any of the Race Instructions, Rules and/or Regulatons Dhs. 500</div>
   <div class="">REGISTRATION DEADLINE: <span class="of-use-ch"> 29 sep 2016 </span> </div>
+</div>
+<div class="note">
+  <span class="not">NOTE:</span>
+    This form is for online registration only. The driver should come to the club to complete
+  <div class="note-2nd">the registration formalities.</div>
+</div>
+<div class="more-info">
+  <span class="more-info-1st">For more information please call us on</span>
+  <span class="more-info-2nd">+971 2 681 55 66-ext.222
+  Ahmed El Tahir, Email: registrationeadimsc.ae</span>
 </div>
 ',
         'extra' => array(
