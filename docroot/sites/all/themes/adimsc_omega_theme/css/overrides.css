@@ -856,7 +856,7 @@ section {
   border: solid 1px #565656;
   padding: 5px;
   margin-right: 5px;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 }
 .page-node-196 .right-group-1st label[for="edit-submitted-race-category"] ,
 .page-node-196 .right-group-2nd label[for="edit-submitted-mainufacturer"] {
@@ -924,7 +924,7 @@ section {
 .page-node-196  .more-info .more-info-2nd {
   color: #6692dc;
 }
-.page-node-196  .form-submit {
+.page-node-196  .webform-submit {
   float: right;
   margin-top: 2%;
   margin-right: 6%;
