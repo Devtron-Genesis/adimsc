@@ -763,6 +763,56 @@ section {
   font-weight: 700;
   color: #52befc;
 }
+/*Race Type Vedio Galler*/
+.race-detail-area .jcarousel-skin-ie7 .jcarousel-container {
+    background: transparent;
+    border: none;
+    width: 800px;
+    height:200px;
+    margin-left: -45px;
+}
+.race-detail-area .jcarousel-skin-ie7 ul {
+  height: 200px !important;
+}
+.race-detail-area .jcarousel-skin-ie7 ul .views-content-field-add-vedio-yoitube-link {
+  float: left !important;
+  width: 45% !important;
+  margin-right: 10px;
+}
+.race-detail-area .jcarousel-skin-ie7 ul li .views-content-field-add-vedio-yoitube-link img {
+ width: 126px !important;
+ height: 74px !important;
+ border: 2px solid #DDDDDD;
+}
+.race-detail-area .jcarousel-skin-ie7 ul .views-field-title {
+  color:#BBB8B8;
+  font-size: 28px;
+  margin-left: 31px
+}
+.race-detail-area .jcarousel-skin-ie7 ul .views-content-field-vedio-description {
+  color:#BBB8B8;
+  margin-top:34px;
+  float:left;
+  margin-left: -18px;
+}
+.race-detail-area .jcarousel-skin-ie7 ul li {
+  width: 20% !important;
+  height: 100px !important;
+  background: #333 !important;
+  padding: 8px !important;
+  min-height: 74px !important;
+  margin-right: 12px !important;
+  border: 1px solid #000 !important;
+}
+.race-detail-area .jcarousel-skin-ie7 .jcarousel-clip-horizontal {
+  width: 100% !important;
+  overflow: hidden;
+  height: 100px !important;
+
+}
+.race-detail-area .jcarousel-skin-ie7 .jcarousel-clip-horizontal .views-field-title {
+  float: left !important;
+}
 /*Webform CSS*/
 .page-node-192 .node__submitted {
   display: none;
@@ -888,7 +938,6 @@ section {
   background: red;
   margin-right: 10%;
 }*/
-
 /* Media Queries */
 @media (max-width: 1400px) {
 

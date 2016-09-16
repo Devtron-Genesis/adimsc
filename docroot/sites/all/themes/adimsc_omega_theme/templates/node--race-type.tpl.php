@@ -94,28 +94,25 @@
       <?php print $user_picture; ?>
       <p class="submitted"><?php print $submitted; ?></p>
     </footer>
-  <?php endif; ?>
-
-  <div<?php print $content_attributes; ?>>
-<section>
-  <div class="section-cover">
-    <div class="race-detail-area">
+    <?php endif; ?>
+      <div<?php print $content_attributes; ?>>
+      <section>
+      <div class="section-cover">
+      <div class="race-detail-area">
       <div class="race-img">
-        <?php
-              // We hide the comments and links now so that we can render them later.
-
-  print render($content['field_race_type_image']);
-
-            ?>
+      <?php
+      // We hide the comments and links now so that we can render them later.
+      print render($content['field_race_type_image']);
+      ?>
       </div>
       <div class="race-detail">
-        <div class="race-detail-tabs resource-bar">
-          <span class="close-btn visible-xs visible-1040"><i aria-hidden="true"
-          class="fa fa-times"></i></span>
-          <ul role="tablist">
-            <li class="active" role="presentation">
-              <a aria-controls="home" class="about-race" data-toggle="tab"
-              href="#aboutRace" role="tab"><i></i> <span>About Race</span></a>
+      <div class="race-detail-tabs resource-bar">
+      <span class="close-btn visible-xs visible-1040"><i aria-hidden="true"
+      class="fa fa-times"></i></span>
+        <ul role="tablist">
+          <li class="active" role="presentation">
+            <a aria-controls="home" class="about-race" data-toggle="tab"
+            href="#aboutRace" role="tab"><i></i> <span>About Race</span></a>
             </li>
             <li role="presentation">
               <a aria-controls="home" class="about-team" data-toggle="tab"
@@ -145,10 +142,10 @@
           <div class="tab-pane active" id="aboutRace" role="tabpanel">
             <div class="left-section">
               <h1>UIM F1H2o World championship</h1>
-              <p><?php print render($content['field_about_race']);?></p>
+              <p><?php print render($content['field_about_races']);?></p>
             </div>
             <div class="right-section">
-            <?php print render($content['field_about_race_images']);
+            <?php print render($content['field_about_race_image']);
             ?>
             </div>
           </div>
@@ -156,106 +153,27 @@
             <div class="left-section">
               <h1>F1 Team Abu Dhabi</h1>
               <p>
-              <?php print render($content['field_about_team_detail']);?>
+              <?php print render($content['field_about_team']);?>
               </p>
             </div>
             <div class="right-section">
-            <?php print render($content['field_about_team_images']);?>
+            <?php print render($content['field_about_team_image']);?>
             </div>
           </div>
           <div class="tab-pane" id="teamMembers" role="tabpanel">
           <!--Reder Team Members Region-->
-
-
-          <?php echo $members;?>
+       <?php echo $members;?>
             </div>
         <div class="tab-pane" id="photoGallery" role="tabpanel">
+        <!--Reder Team Gallery Images View-->
             <h1>Photo Gallery</h1>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-            <div class="photo-tab"><img alt="" src=
-            "images/photo-tab.gif"></div>
-          </div>
+           <?php echo $gallery;?>
+            </div>
           <div class="tab-pane" id="videoGallery" role="tabpanel">
-            <h1>Video Gallery</h1>
-            <div class="team-video-area">
-              <div class="video-player"><img alt="" class="img-responsive" src=
-              "images/video-img.jpg"></div>
-              <div class="video-carousel">
-                <div style="margin-left: 2em">
-                  <div class="carousel slide hidden-xs" data-ride="carousel"
-                  id="video-carousel">
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                        <ul>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="item">
-                        <ul>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="video-thumb"><img alt="" src=
-                            "images/video-thumb.gif"></div>
-                            <div class="thumb-bio">
-                              <h5>Audi RS7</h5>
-                              <p>Client: Audi 07569 has a loarma ipsum....</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div><a class="right carousel-control" data-slide="next"
-                    href="#video-carousel" role="button"><i aria-hidden="true"
-                    class="fa fa-angle-right"></i></a>
-                  </div>
-                </div>
-              </div>
+           <h1>Video Gallery</h1>
+           <div class="team-video-area">
+                  <?php echo $v_gallery;?>
+
             </div>
           </div>
         </div>
@@ -263,7 +181,5 @@
     </div>
   </div>
 </section>
-
   </div>
-
 </article>
