@@ -814,43 +814,43 @@ section {
   float: left !important;
 }
 /*Webform CSS*/
-.page-node-192 .node__submitted {
+.page-node-196 .node__submitted {
   display: none;
 }
-.page-node-192 #pagetitle {
+.page-node-196 #pagetitle {
   padding-top: 10%;
   padding-left: 10%;
 }
-.page-node-192 .webform-client-form-192 {
+.page-node-196 .webform-client-form-196 {
   float: left;
   padding-top: 5%;
-  padding-left: 10%;
-  width: 80%;
+  width: 100%;
 }
-.page-node-192  input:not([type]), input[type="text"], input[type="email"] {
-  background: #494347;
-  opacity: 0.7;
+.page-node-196  input:not([type]), input[type="text"], input[type="email"] {
+  background: #6a6d77;
+  opacity: 0.6;
   border: none;
   color: #fff;
   font-size: 13px;
   padding: 1% 0% 2% 3%;
 }
-.page-node-192 ::-webkit-input-placeholder {
+.page-node-196 ::-webkit-input-placeholder {
   color: #fff;
 }
-.page-node-192 .full-group{
+.page-node-196 .full-group{
   width: 100%;
   float: left;
 }
-.page-node-192 .left-group{
-  width: 30%;
+.page-node-196 .left-group{
+  width: 25%;
+  margin-left: 10%;
   float: left;
 }
-.page-node-192 .right-group{
-  width: 70%;
+.page-node-196 .right-group{
+  width: 60%;
   float: left;
 }
-.page-node-192 .right-group-1st{
+.page-node-196 .right-group-1st{
   width: 60%;
   float: left;
   border: solid 1px #565656;
@@ -858,86 +858,83 @@ section {
   margin-right: 5px;
   padding-bottom: 5%;
 }
-.page-node-192 .right-group-1st label[for="edit-submitted-race-category"] ,
-.page-node-192 .right-group-2nd label[for="edit-submitted-mainufacturer"] {
+.page-node-196 .right-group-1st label[for="edit-submitted-race-category"] ,
+.page-node-196 .right-group-2nd label[for="edit-submitted-mainufacturer"] {
   margin-bottom: 20px;
   color: #6b9ff6;
 }
-.page-node-192  .form-required{
+.page-node-196  .form-required{
   display: none;
 }
-.page-node-192 .right-group-2nd{
+.page-node-196 .right-group-2nd{
   width: 35%;
   float: left;
   border: solid 1px #565656;
   padding: 5px;
 }
-.page-node-192 .office-use{
+.page-node-196 .office-use{
   float: left;
   margin-top: 5px;
-  width: 66%;
+  width: 56%;
   border: solid 1px #565656;
   line-height: 200%;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 3%;
 }
-.page-node-192 .of-use-ch{
+.page-node-196 .of-use-ch{
   color: #6b9ff6;
 }
-.page-node-192 .off-use-tittle{
+.page-node-196 .off-use-tittle{
   color: #6b9ff6;
   font-size: 20px;
   font-weight: bold;
 }
-.page-node-192 .right-group-1st .form-checkboxes .form-item{
+.page-node-196 .right-group-1st .form-checkboxes .form-item{
   float: left;
   width: 50%;
 }
-.page-node-192  .note{
+.page-node-196  .note{
   background: #af2038;
-  width: 67%;
+  width: 57%;
   margin-top: 5px;
   float: left;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 2%;
 }
-.page-node-192  .not{
+.page-node-196  .not{
   font-weight: bold;
   padding-right: 10px;
 }
-.page-node-192  .note-2nd{
+.page-node-196  .note-2nd{
   padding-left: 8%;
 }
-.page-node-192  .more-info{
+.page-node-196  .more-info{
   float: left;
-  width: 69%;
+  width: 30%;
   margin-top: 5px;
-  margin-left: 30%;
+  margin-left: 35%;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
-.page-node-192  .more-info .more-info-1st{
+.page-node-196  .more-info .more-info-1st{
   color: white;
 }
-.page-node-192  .more-info .more-info-2nd {
+.page-node-196  .more-info .more-info-2nd {
   color: #6692dc;
-  padding-right: 10%;
 }
-/*.page-node-192 .race-cat{
-  float: left;
-  width: 20%
+.page-node-196  .form-submit {
+  float: right;
+  margin-top: 2%;
+  margin-right: 6%;
+  background: #5473a6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  padding: .5% 1.2% .5% 1.2%;
 }
-.page-node-192 .manufac{
-  float: left;
-  width: 20%;
-}*/
-/*.page-node-192 .left-field-groups{
-  float: left;
-  background: red;
-  margin-right: 10%;
-}*/
 /* Media Queries */
 @media (max-width: 1400px) {
 

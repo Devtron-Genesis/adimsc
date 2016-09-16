@@ -75,9 +75,6 @@ $webforms = array();
       'callback' => 'date_iso8601',
     ),
   ),
-  'path' => array(
-    'pathauto' => 1,
-  ),
   'translations' => array(
     'original' => NULL,
     'data' => array(),
@@ -85,7 +82,7 @@ $webforms = array();
   'webform' => array(
     'next_serial' => 1,
     'confirmation' => '',
-    'confirmation_format' => NULL,
+    'confirmation_format' => 'filtered_html',
     'redirect_url' => '<confirmation>',
     'status' => 1,
     'block' => 0,
@@ -93,7 +90,7 @@ $webforms = array();
     'auto_save' => 0,
     'submit_notice' => 1,
     'confidential' => 0,
-    'submit_text' => '',
+    'submit_text' => 'SUBMIT NOW',
     'submit_limit' => -1,
     'submit_interval' => -1,
     'total_submit_limit' => -1,
@@ -110,7 +107,7 @@ $webforms = array();
     'preview_prev_button_label' => '',
     'preview_title' => '',
     'preview_message' => '',
-    'preview_message_format' => NULL,
+    'preview_message_format' => 'filtered_html',
     'preview_excluded_components' => array(),
     'machine_name' => 'registration_form',
     'record_exists' => TRUE,
@@ -507,7 +504,7 @@ $webforms = array();
   'picture' => 0,
   'data' => 'b:0;',
   'webform_features_author' => 'admin',
-  'webform_features_revision_author' => '',
+  'webform_features_revision_author' => 'admin',
 );
 return $webforms;
 }
